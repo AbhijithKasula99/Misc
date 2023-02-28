@@ -4,4 +4,4 @@
 
 ## Necessary notes section
 
-1. [Java](../Kasulaverse-beta/java.md)
+1. [Java](./java.md)

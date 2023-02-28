@@ -4,4 +4,4 @@
 
 ## Necessary notes section
 
-1. [Java](./java.md)
+1. [Java](https://github.com/AbhijithKasula99/Kasulaverse-beta/blob/62a6eedd3ed92ccc7a0a452540b523cf5514cace/java.md)

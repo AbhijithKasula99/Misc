@@ -4,5 +4,5 @@
 
 ## Necessary notes section
 
-1. [Java](./java/java.md)
+1. [Java](./Java/java.md)
 2. [Three.js](./Three.js/threejs.md)

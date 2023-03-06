@@ -7,4 +7,3 @@ public class hello
     }
 }
 
-// 2.

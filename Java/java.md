@@ -22,3 +22,23 @@ public class hello // class and file name must be same
 ```
 
 - To run this program we need to hit `javac hello.java` on the terminal and `java hello`.
+
+## Topics
+
+---
+
+| Sl.no | Topic                            |
+| ----- | -------------------------------- |
+| 1.    | Variables                        |
+| 2.    | Datatypes                        |
+| 3.    | Type Conversion and type casting |
+| 4.    | Assignment Operators             |
+| 5.    | Relational Operators             |
+| 6.    | Conditions                       |
+| 7.    | Switch Statements                |
+| 8.    | Loops                            |
+| 9.    | Class and Objects                |
+| 10.   | BTS of Java                      |
+| 11.   | Methods                          |
+| 12.   | Stack and Heap                   |
+| 13.   | Arrays                           |

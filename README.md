@@ -6,4 +6,5 @@
 
 1. [Java](./Java/java.md)
 2. [Three.js](./Three.js/threejs.md)
-3. [Python for Data Analysis](./Python_Data_Analysis/python_data.md)
+3. [Python Bible](./Python_Bible/python_bible.md)
+4. [Python for Data Analysis](./Python_Data_Analysis/python_data.md)

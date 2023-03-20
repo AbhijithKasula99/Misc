@@ -1,0 +1,70 @@
+.intro{
+    background-color: #457b9d;
+    color: #f1faee;
+    text-align: center;
+    padding: 2%;
+    margin: 0%;
+    border: 0%;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+.h1{
+    font-size: large;
+}
+
+footer{
+    background-color: #ffb703;
+    color: #f1faee;
+    text-align: center;
+    padding: 1%;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#navbar{
+    background-color: #fefae0;
+    padding: 2%;
+}
+
+#navbar ul{
+    padding: 0%;
+    list-style: none;
+}
+
+#navbar li{
+    display: inline;
+    font-size: medium;
+}
+
+#navbar a{
+    text-decoration: none;
+    color: #7f5539;
+    font-family: 'Roboto Flex', sans-serif;
+    
+}
+
+#navbar a:hover{
+    padding: 0.5%;
+    background-color: #6b705c;
+    color: #fefae0;
+}
+
+/* FAVICON AND ANIMATION SECTION   */
+#title {
+    font-size: 30px;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Position favicon */
+  link[rel="icon"] {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+  }
+  

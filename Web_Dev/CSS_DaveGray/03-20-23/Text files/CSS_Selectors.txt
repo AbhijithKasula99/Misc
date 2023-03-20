@@ -1,0 +1,84 @@
+HTML Code for CSS Selectors
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+
+    <h1>CSS Selectors</h1>
+
+    <article>
+        <h2>Article 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, voluptate. 
+            Fuga doloremque voluptatibus, nostrum possimus debitis excepturi dicta, 
+            sint nam inventore voluptate impedit sequi culpa velit reprehenderit laborum ut odit.</p>
+    </article>
+
+    <article>
+        <h2>Article 2</h2>
+        <p class="gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, voluptate. 
+            Fuga doloremque voluptatibus, nostrum possimus debitis excepturi dicta, 
+            sint nam inventore voluptate impedit sequi culpa velit reprehenderit laborum ut odit.</p>
+    </article>
+
+    <article>
+        <h2>Article 3</h2>
+        <p id="blue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, voluptate. 
+            Fuga doloremque voluptatibus, nostrum possimus debitis excepturi dicta, 
+            sint nam inventore voluptate impedit sequi culpa velit reprehenderit laborum ut odit.</p>
+    </article>
+</body>
+</html>
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+CSS Code for CSS Selectors 
+
+* { /* Universal Selector (This implies changes to all the elements usually used for resetting) */
+    background-color: blanchedalmond;
+    font-family: Helvetica;
+}
+
+p { /* Element Selector */
+    font-size: 24px;
+    color: purple;
+}
+
+h1, h2 { /* Element Selector with group selection combination */
+    color: brown;
+}
+
+.gray { /* Class Selector (This can be reused at multiple places) (Most preferred) */
+    color: red;
+}
+
+#blue { /* ID Selector (This can exist only once) (Not a good practice) */ 
+    color: blue;
+    font-style: italic;
+}
+
+/* ID Selector >>>> Class Selector >>>> Element Selector  */
+
+/* !Important is the ultimate one to overwrite any piece of code or property, This is not at all recommended
+
+p { 
+    font-size: 24px;
+    color: purple !important;
+}
+
+*/
+
+---------------------------------------------------------------------------------------------------------------------------
+
+Important URL's 
+
+1. For CSS code validation use: https://jigsaw.w3.org/css-validator/ 
+
+2. To calculate the specificity of a Selector use: https://specificity.keegan.st/ 

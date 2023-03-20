@@ -1,0 +1,87 @@
+There are few inbuilt colors that pop up as suggestions while we are working on it. 
+Other than that ther are many ways to choose a specific tone and those are:
+
+1. RGB code
+2. CMYK code
+3. HEX code
+4. RGBA code (This is for alpha channel and this is used for text transparency, A ranges from 0 to 1)
+5. HSL code (Hue, Saturation and Lightness code)
+6. HSLA code
+
+CHECK THIS OUT !!: https://www.digitala11y.com/color-contrast-analyzers-checkers/
+
+Tools for color pallette:
+
+1. https://coolors.co/ 
+
+2. https://color.adobe.com/create/color-wheel 
+
+3. https://toolness.github.io/accessible-color-matrix/
+
+Tools to check the contrast
+
+1. https://coolors.co/contrast-checker/112a46-acc8e5
+
+2. https://www.visionaustralia.org/business-consulting/digital-access/resources/colour-contrast-determinator 
+
+------------------------------------------------------------------------------------------------------------------------------
+
+HTML code
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+
+    <h1>CSS Selectors</h1>
+
+    <article>
+        <h2>Article 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, voluptate. 
+            Fuga doloremque voluptatibus, nostrum possimus debitis excepturi dicta, 
+            sint nam inventore voluptate impedit sequi culpa velit reprehenderit laborum ut odit.</p>
+    </article>
+
+    <article>
+        <h2>Article 2</h2>
+        <p class="gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, voluptate. 
+            Fuga doloremque voluptatibus, nostrum possimus debitis excepturi dicta, 
+            sint nam inventore voluptate impedit sequi culpa velit reprehenderit laborum ut odit.</p>
+    </article>
+
+    <article>
+        <h2>Article 3</h2>
+        <p id="blue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, voluptate. 
+            Fuga doloremque voluptatibus, nostrum possimus debitis excepturi dicta, 
+            sint nam inventore voluptate impedit sequi culpa velit reprehenderit laborum ut odit.</p>
+    </article>
+</body>
+</html>
+
+-----------------------------------------------------------------------------------------------------------------
+
+CSS code
+
+* { /* Universal Selector (This implies changes to all the elements usually used for resetting) */
+    background-color: #ffd23f;
+    font-family: Helvetica;
+}
+
+p { /* Element Selector */
+    font-size: 24px;
+    color: #001011;
+    font-weight: 50;
+}
+
+h1 {
+    text-align: center;
+    font-size: 144px;
+}
+
+------------------------------------------------------------------------------------------------------------------

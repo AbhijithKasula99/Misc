@@ -1,0 +1,83 @@
+- Everything in a webpage is usually treated as a box.
+
+- There are two types of box sizings and those are:
+    1. Content-box
+    2. Border-box
+
+- In content box if we include 400px of an element it assigns 400 px to the complete 
+element and it doesn't account margin, border and padding.
+
+- If we use border box and assign 400px then the total sum of element, border, margin and padding will account
+to 400 px.
+ ___________________________________
+|                                   |
+| Border-Box >>>>>>>>>> Content-Box |
+|___________________________________|
+
+- For safe side in reset sectio have this piece of code
+
+* {
+    box sizing: border-box;
+}
+
+------------------------------------------------------------------------------------------------------------------
+
+HTML code
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>CSS Box Model</title>
+</head>
+<body>
+    <div>
+        <h1 class="container">Figuring Out CSS</h1>
+        <p class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, 
+        deleniti. Commodi reprehenderit voluptatum temporibus ratione vero ullam est veritatis 
+        repellat perferendis nemo distinctio nisi saepe voluptate voluptatem, quos aut quia!</p>
+    </div>
+
+    <div class="circle"> </div>
+</body>
+</html>
+
+----------------------------------------------------------------------------------------------------------------
+
+CSS code 
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    font-family: helvetica;
+    font-size: 1.5rem;
+    
+    /* margin-top: 1.5rem;  
+    (Select all the content you want to comment and click Alt + Shift + A for commenting all the content) 
+    margin-left: 1.5rem;
+    margin-right: 1.5rem; */
+
+    /* The above content can be written easily in the same way like */
+    padding: 1.5rem;
+    border-top: 5px dotted; /* To repeat the same content press (Shift + Alt + Down Arrow) */
+    border-bottom: 5px #001011 dotted; 
+    border-left: green 3px solid;
+
+    /* You can also specify a specific color to the borders or any element */
+    border-top-color: blue;
+    border-bottom-color: red ;
+}
+
+.circle { /* This is used to create a circle */
+    width: 100px;
+    height: 100px;
+    background-color: darkorange;
+    border: #001011 2px solid;
+    margin: 1.5rem auto;
+    border-radius: 50px;
+}

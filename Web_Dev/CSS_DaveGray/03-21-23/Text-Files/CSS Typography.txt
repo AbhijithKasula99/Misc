@@ -1,0 +1,145 @@
+- Typography is the way that the text is arranged and presented.
+
+- All the code in CSS is inherited by the HTML tags and the form tag doesn't inherit the CSS code so
+the design changes won't be reflected in the output. For that to happen write this piece of code
+
+input, button {
+    font: inherit;
+}
+
+- There are many things that can happen in a typography, those are:
+1. Text-Decoration
+2. Text-Transform
+3. Text-Align
+4. Text-Indent
+
+- There are many other typography styles and elements that can be used to alter the text design, those are:
+1. Line-Height 
+2. Letter-Spacing
+3. Word-Spacing
+
+- There are usually two types of fonts:
+1. Web safe fonts (No need of installation, import or plugins) 
+2. External (Need to be installed, imported or linked)
+
+- Raleway Dots font is lit try to use it somewhere.
+
+- I have used external font "Righteous" using link method for title, @import method for the paragraph using 
+this "Urbanist" font.
+
+----------------------------------------------------------------------------------------------------------------
+
+HTML code
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>CSS Box Model</title>
+</head>
+<body>
+
+    <header>
+        <h1>Figuring Out CSS</h1>
+    </header>
+     
+    <main>
+        <p class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, deleniti. 
+        Commodi reprehenderit voluptatum temporibus ratione vero ullam est veritatis repellat perferendis 
+        nemo distinctio nisi saepe voluptate voluptatem, quos aut quia!</p>    
+
+        <!-- <form>
+            <label for="name">Name:</label>
+            <input id="name" type="text" placeholder="Your Name">
+            <button>Submit</button>
+        </form> -->
+    </main>
+
+    
+</body>
+</html>
+
+---------------------------------------------------------------------------------------------------------------------
+
+CSS code
+
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap');
+
+/* 
+    Typography is the way that the text is arranged and presented.
+*/
+
+* {
+    background-color: #FFD23F;
+}
+
+body {
+    padding: 10%;
+    font-size: 2rem;
+}
+
+h1 {
+    font-family: 'Righteous', cursive;
+}
+
+/* input, button {
+    font: inherit;
+} */
+
+/*  TEXT-DECORATION
+p {
+    text-decoration: underline;
+    text-decoration: overline;
+    text-decoration: line-through;
+    text-decoration: none; (Default for a paragraph) 
+} 
+*/
+
+/*  TEXT-TRANSFORM 
+p {
+    text-transform: capitalize; (Capitalizes every first letter of a word)
+    text-transform: lowercase; (Puts every word in a lowercase)
+    text-transform: uppercase; (Capitalizes everything)
+}
+*/
+
+/* TEXT-ALIGN
+p { 
+    text-align: left; (Default for all values)
+    text-align: justify; (Right side is totally uniform)
+    text-align: right; (All the text inclines to the right)
+}
+*/
+
+
+/*   TEXT-INDENT
+p {
+    text-indent: 5rem;
+    text-align: justify;
+} */
+
+
+/* p {
+   line-height: 1.5; 
+   letter-spacing: 0.2rem;
+   word-spacing: 0.2rem;
+} */
+
+/* p {
+    font-family: monospace, Arial, Helvetica;
+    (These are web safe fonts and don't need any extension and can display or 
+    function on almost all devices and browser)
+} */
+
+p {
+    font-family: 'Urbanist', sans-serif;
+    color: brown;
+}
+
+---------------------------------------------------------------------------------------------------------

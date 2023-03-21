@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap');
+
+/* 
+    Typography is the way that the text is arranged and presented.
+*/
+
+* {
+    background-color: #FFD23F;
+}
+
+body {
+    padding: 10%;
+    font-size: 2rem;
+}
+
+h1 {
+    font-family: 'Righteous', cursive;
+}
+
+/* input, button {
+    font: inherit;
+} */
+
+/*  TEXT-DECORATION
+p {
+    text-decoration: underline;
+    text-decoration: overline;
+    text-decoration: line-through;
+    text-decoration: none; (Default for a paragraph) 
+} 
+*/
+
+/*  TEXT-TRANSFORM 
+p {
+    text-transform: capitalize; (Capitalizes every first letter of a word)
+    text-transform: lowercase; (Puts every word in a lowercase)
+    text-transform: uppercase; (Capitalizes everything)
+}
+*/
+
+/* TEXT-ALIGN
+p { 
+    text-align: left; (Default for all values)
+    text-align: justify; (Right side is totally uniform)
+    text-align: right; (All the text inclines to the right)
+}
+*/
+
+
+/*   TEXT-INDENT
+p {
+    text-indent: 5rem;
+    text-align: justify;
+} */
+
+
+/* p {
+   line-height: 1.5; 
+   letter-spacing: 0.2rem;
+   word-spacing: 0.2rem;
+} */
+
+/* p {
+    font-family: monospace, Arial, Helvetica;
+    (These are web safe fonts and don't need any extension and can display or 
+    function on almost all devices and browser)
+} */
+
+p {
+    font-family: 'Urbanist', sans-serif;
+    color: brown;
+}

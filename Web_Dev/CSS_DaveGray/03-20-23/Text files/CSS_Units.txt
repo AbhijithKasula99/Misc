@@ -1,0 +1,85 @@
+- There are various units that can be used to write your code, if we use the units like pixels, rem or anthing else.
+
+- We will restrict it and it might not be multi-device friendly. For writing a food code it is better to use percentages relative
+to the main element.
+
+- THIS WEBSITE IS THE MOST RECOMMENDED SITE FOR REFERRING THE DOCUMENTATION FOR WEB DEVELOPMENT:
+https://developer.mozilla.org/en-US/ 
+
+- If you scroll through the measurement, scaling and dimensions section we can get to to know the default values and the relation 
+between them. For example: 1 rem is 16 px.
+
+- Always refer and link the sub-elements to parent element and make the parent element dynamic so that it adjusts according to 
+the device the output is being displayed. 
+
+- When you inspect your output when you hit CTRL + SHIFT + I, then you can find a section that has user agent stylesheet, that is 
+the code that the browser uses by default to run the code and that can be removed in the CSS reset section *{}.
+
+- Percentage >>>>> viewport width and height.
+
+- VW and VH will create an additional horizontal scroll bar and make the content look
+clumbsy, so it's better to use Percentage. The places where VH and VW play an important role is if we want to set minimum and 
+default values.
+
+example:
+
+body {
+    min-height: 100 vh; /* This will set the min height as 100 vh an dgrow as the content keeps growing */
+}
+
+- If the above code used 100% by default the system uses 100% and there won't be any change in the body section.
+
+------------------------------------------------------------------------------------------------------------------------
+
+HTML Code
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning CSS</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+
+    <h1>CSS Selectors</h1>
+
+    <article>
+        <h2>Article 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, voluptate. 
+            Fuga doloremque voluptatibus, nostrum possimus debitis excepturi dicta, 
+            sint nam inventore voluptate impedit sequi culpa velit reprehenderit laborum ut odit.</p>
+    </article>
+</body>
+</html>
+
+-----------------------------------------------------------------------------------------------------------------------
+
+CSS code
+
+* { /* Universal Selector (This implies changes to all the elements usually used for resetting) */
+    background-color: #ffd23f;
+    font-family: Helvetica;
+}
+
+body {
+    min-height: 100 vh; 
+}
+
+p { /* Element Selector */
+    font-size: 2rem;
+    color: #001011;
+    font-weight: 50;
+    width: 40ch;
+}
+
+h1 {
+    border: 2px dashed #001011;
+    text-align: center;
+    padding: 0.2em;
+    width: 50%;
+}
+
+------------------------------------------------------------------------------------------------------------------------

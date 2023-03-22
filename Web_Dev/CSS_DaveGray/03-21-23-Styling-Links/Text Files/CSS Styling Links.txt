@@ -1,0 +1,71 @@
+- Just created 2 files locally and linked them to main html file, attached 2 web links to the file using the anchor tag.
+
+- There are few classes called pseudo classes that can allow us to alter the default features, suppose if we visit 
+a link it turns to purple, if you want it to change to another color we can use "a:visited" and use that to alter the code.
+
+- Pseudo code >>>>> Normal code in terms of specificity. (Use the specificity calculator to check)
+
+- Color theory and clealiness of the code is really important to maintain the standard of the code.
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+HTML code
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Styling Links</title>
+</head>
+<body>
+    <header>
+        <h1>CSS Links</h1>
+    </header>
+    <main>
+        <p>I started my journey in Java using this <a href="https://youtube.com/watch?v=BGTx91t8q50&si=EnSIkaIECMiOmarE">video</a>.</p>
+
+        <p>I started my journey in Python using this <a href="https://youtube.com/watch?v=XKHEtdqhLK8&si=EnSIkaIECMiOmarE">video</a>.</p>
+
+        <p>If you want to know things about me then <a href="./All About Abhijith.html">click here</a>.</p>
+
+        <p>Check this page to get to know about my <a href="./two.html">personal life</a>.</p>
+    </main>
+</body>
+</html>
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+CSS code
+
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
+body {
+    font-family: 'Oxygen', sans-serif;
+    padding: 10%;
+    font-size: 2rem;
+}
+
+a { /* Normal element */
+    text-decoration: underline;
+    cursor: pointer;
+    color: black;
+}
+
+a:visited { /* Pseudo element */
+    color: purple;
+}
+
+a:hover {
+    color: white;
+    background-color: black;
+    opacity: 0.7;
+}
+
+a:active {
+    color: red;
+}
+
+----------------------------------------------------------------------------------------------------------------------------------------

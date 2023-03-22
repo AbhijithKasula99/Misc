@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
+body {
+    font-family: 'Oxygen', sans-serif;
+    padding: 10%;
+    font-size: 2rem;
+}
+
+a { /* Normal element */
+    text-decoration: underline;
+    cursor: pointer;
+    color: black;
+}
+
+a:visited { /* Pseudo element */
+    color: purple;
+}
+
+a:hover {
+    color: white;
+    background-color: black;
+    opacity: 0.7;
+}
+
+a:active {
+    color: red;
+}

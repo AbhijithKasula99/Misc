@@ -1,0 +1,79 @@
+- There are two types of lists and those are ordered list and unordered list, they are defined using 'ol' and 'ul' tag.
+
+- They can be edited and explored and different icons can be used and the procedure is same that is by altering CSS code.
+
+----------------------------------------------------------------------------------------------------------------------------
+
+HTML code
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Figuring Out CSS</title>
+</head>
+<body>
+    <header>
+        <h1>Figuring Out CSS</h1>
+    </header>
+
+    <main>
+        <article>
+            <h2>Ordered List</h2>
+            <ol>
+                <li>Step 1</li>
+                <li>Step 2</li>
+                <li>Step 3</li>
+            </ol>
+        </article>
+
+        <article>
+            <h2>Unordered List</h2>
+            <ul>
+                <li>Step 1</li>
+                <li>Step 2</li>
+                <li>Step 3</li>
+            </ul>
+        </article>
+
+        <article class="image">
+            <h2>Unordered List</h2>
+            <ul>
+                <li>Step 1</li>
+                <li>Step 2</li>
+                <li>Step 3</li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Reversed List</h2>
+            <ol start="9" reversed>
+                <li>Step 1</li>
+                <li>Step 2</li>
+                <li>Step 3</li>
+            </ol>
+        </article>
+    </main>
+</body>
+</html>
+
+-----------------------------------------------------------------------------------------------------------------------
+
+CSS code
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+body {
+    padding: 5% 10%;
+    font-size: 2rem;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.image { /* using an image as an icon */
+    list-style-image: url(../Image/check.png);
+}
+
+-------------------------------------------------------------------------------------------------------------------------

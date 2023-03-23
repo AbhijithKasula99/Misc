@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+body {
+    padding: 5% 10%;
+    font-size: 2rem;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.image {
+    list-style-image: url(../Image/check.png);
+}
+

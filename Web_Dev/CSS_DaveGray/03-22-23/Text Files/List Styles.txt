@@ -74,6 +74,7 @@ body {
 
 .image { /* using an image as an icon */
     list-style-image: url(../Image/check.png);
+    list-style: square
 }
 
 -------------------------------------------------------------------------------------------------------------------------

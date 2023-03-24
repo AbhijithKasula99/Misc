@@ -8,5 +8,15 @@ body {
 
 .image {
     list-style-image: url(../Image/check.png);
+    list-style: sqaure url(../Image/check.png); /* If the image fails the default would be square */
 }
 
+.image li:nth-child(2) { /* Changing the 2nd element of the image class list to red */
+    color: red;    
+}
+
+ul ::marker { /* This is used to alter the list tag style and it has the capability to overwrite so be careful */
+    color: green;
+    content: "3 Salla  ";
+
+}

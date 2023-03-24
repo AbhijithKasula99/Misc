@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+
+/* MINI PROJECT */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0.5rem;
+    font-family: 'Mynerve', cursive;
+    text-align: center;
+}
+
+nav {
+    border: 2px solid #333;
+    border-radius: 2rem;
+    margin: 0 auto 1rem;
+    max-width: 600px;
+    font-size: 3rem;
+    line-height: 7rem;
+}
+
+h2{
+    padding: 1rem;
+    background-color: gold;
+    border-radius: 2rem 2rem 0 0; /* In the loop the top left and right must be altered the bottom two must remain the same */
+}
+
+ul {
+    list-style-type: none;
+    /* text-decoration: none; */
+}
+
+li a {
+    display: block;
+}
+
+li {
+    border-top: 1px solid #333;
+}
+
+li a,
+li a:visited {
+    text-decoration: none;
+    color: #333;
+}
+
+li a:hover,
+li a:focus {
+    text-decoration: none;
+    background-color: #333; /*  This will only decorate the text not the entire background for this to happen use li a {display: block; } above */
+    color: white;
+    cursor: pointer;
+} 
+
+/* The last entry (About) is still in box and it isn't sitting with the border radius frame to fix that we must: */
+
+li:last-child a {
+    border-radius: 0 0 2rem 2rem;
+}

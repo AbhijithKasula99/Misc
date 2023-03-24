@@ -1,0 +1,98 @@
+- This is used to treat element is treated as a block or inline elementand the layoout is used for its children, such as 
+flow layout, grid or flex.
+
+- This is majorly used to style links as buttons and add fancy animations by altering the pseudo phase of the element. 
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+HTML Code
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuring out css</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <!-- <p>This is a paragraph.</p>
+    <p>This is <span class="opposite">another </span>paragraph.</p>
+ -->
+    <nav>
+        <ul>
+            <li><a href="#">Intro</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Projects</a></li>
+        </ul>
+    </nav>
+
+</body>
+</html>
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+CSS Code
+
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Mynerve&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 2rem;
+    font-family: 'Delicious Handrawn', cursive;
+}
+
+/*---------------------------------- PARAGRAPH CODE --------------------------------------------------------------------------*/
+
+/* p { This occupies 100% of whatever is available 
+    background-color: lightgrey;
+} */
+
+/* .opposite { This causes an overlay for the text another and that does block other contents, the below code can fix that
+    background-color: #333;
+    color: whitesmoke;
+    padding: 4rem;
+} */
+
+/* .opposite {
+    display: inline-block;
+    background-color: #333;
+    margin-top: 100px;
+    height: 200px;
+    color: whitesmoke;
+    padding: 4rem;
+} */
+
+/*---------------------------------- LIST CODE -----------------------------------------------------------------------------*/
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: right;
+    background-color: lightblue;
+    margin: 0;
+}
+
+li {
+    display: inline-block;
+    margin-inline: 0.5rem; /* Applies only for the left and right */
+}
+
+li a { /* Editing the anchor tag */
+    text-decoration: none;
+}
+
+li a:hover, li a:focus { /* Editing the phase of the anchor tags once the pseudo phase is accessed */
+    text-decoration: underline;
+}
+
+/* display: none is a dangerous thing and that is a problem once it is used because the entire section disappears but the code
+will be present. */
+
+----------------------------------------------------------------------------------------------------------------------------------

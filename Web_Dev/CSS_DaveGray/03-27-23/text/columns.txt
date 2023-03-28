@@ -1,0 +1,83 @@
+- To get the HTML code for special characters use this site: https://symbl.cc/en/ 
+
+- Using p*5>20 we create 5 paragraphs.
+
+- We open a section tag and give it a class called columns then do the necessary stylings.
+
+- Added a column line to the page using column-rule.
+
+- Ensured the paragraphs have a minimum width, introduced heading and worked on that
+
+- Introduced quote and then introduced a span class for author and then enaured the dash and author name are stuck on the same line.
+
+-----------------------------------------------------------------------
+
+HTML code
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuring Out CSS</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <section class="columns">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos magni pariatur nemo repudiandae illo autem harum atque nostrum voluptatum optio!</p>
+        <p>Neque numquam nemo placeat nostrum ipsa minima, tempora magni magnam nulla qui perferendis a debitis quidem quia non! Provident, expedita!</p>
+        <!-- <h2>Next Topic</h2> -->
+        <p class="quote">&#8220;Jai Mahishmathi&#8221; <span class="nowrap"> — Bahubali</span></p>
+        <p>Odit, molestias. Hic soluta beatae dolorum voluptatibus iusto eius provident distinctio id doloribus aspernatur officiis repellendus repellat, vero aperiam a!</p>
+        <p>Non accusamus ea aperiam id impedit atque quidem laboriosam maxime maiores, omnis fugiat saepe, magnam qui voluptate, expedita dignissimos quasi.</p>
+    </section>
+    <p>Adipisci id culpa, natus assumenda, incidunt sit consequuntur nisi eius debitis asperiores laborum? Fugit, cupiditate in voluptates qui ipsum odio!</p>
+</body>
+</html>
+
+-----------------------------------------------------------------------
+
+CSS code
+
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+
+body {
+    font-family: 'Mynerve', cursive;
+    font-size: 1.5rem;
+}
+
+.columns {
+    column-count: 4;
+    column-width: 250px; /* This will ensure that the column width remains 250px and doesn't reduce less than that */
+    /* columns: 4 250px; The above 2 lines can be written in a single line using this format. */
+    column-rule: 1.5px solid gray;
+    column-gap: 2rem;
+}
+
+.columns p {
+    margin-top: 0; /* To remove the gap between paragraphs */
+}
+
+.columns h2 {
+    margin-top: 0;
+    background-color: gray;
+    color: white;
+    padding: 1rem; /* There might be a chance that the header might be splitting if the page size is varying */
+    break-inside: avoid; /* This can solve that */
+    /* break-before: column; This can move the button to the newest column but will shrink and scale it down as to satisfy this condition multiple columns must be present */
+}
+
+.columns .quote {
+    margin-top: 2rem;
+    font-size: 3rem;
+    text-align: center;
+    color: gray;
+    column-span: all;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+--------------------------------------------------------------------------------------

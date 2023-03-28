@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+
+body {
+    font-family: 'Mynerve', cursive;
+    font-size: 1.5rem;
+}
+
+.columns {
+    column-count: 4;
+    column-width: 250px; /* This will ensure that the column width remains 250px and doesn't reduce less than that */
+    /* columns: 4 250px; The above 2 lines can be written in a single line using this format. */
+    column-rule: 1.5px solid gray;
+    column-gap: 2rem;
+}
+
+.columns p {
+    margin-top: 0; /* To remove the gap between paragraphs */
+}
+
+.columns h2 {
+    margin-top: 0;
+    background-color: gray;
+    color: white;
+    padding: 1rem; /* There might be a chance that the header might be splitting if the page size is varying */
+    break-inside: avoid; /* This can solve that */
+    /* break-before: column; This can move the button to the newest column but will shrink and scale it down as to satisfy this condition multiple columns must be present */
+}
+
+.columns .quote {
+    margin-top: 2rem;
+    font-size: 3rem;
+    text-align: center;
+    color: gray;
+    column-span: all;
+}
+
+.nowrap {
+    white-space: nowrap;
+}

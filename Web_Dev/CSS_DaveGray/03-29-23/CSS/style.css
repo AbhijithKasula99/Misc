@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Fragment+Mono&family=Inter+Tight:wght@300;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 1.5rem;
+    min-height: 200vh;
+}
+
+.outer-container {
+    border: 3px dashed #000;
+    width: 75vw;
+    height: 85vh;
+    margin: 40px auto;
+    position: relative;
+}
+
+.inner-container {
+    border: 2px solid blue;
+    width: 40vw;
+    height: 50vh;
+    margin: 200px auto;
+    /* position: relative; */
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    color: white;
+    padding: 1rem;
+}
+
+.absolute {
+    background-color: blue;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    /* z-index: 1;  If you want absolute block over fixed */
+}
+
+.relative {
+    background-color: red;
+    position: relative;
+    top: 300px;
+    left: 100px;
+}
+
+.fixed {
+    background-color: brown;
+    position: fixed;
+    top: 100px; /* This doesn't have a boundary and it scrolls till the end of the page */
+}
+
+.sticky {
+    background-color: blueviolet;
+    position: sticky;
+    top: 0; /* This has a boundary of a container it scrolls as long as it is in the container */
+}
+
+/* We can distance the elements using height */
+
+html {scroll-behavior: smooth;} /* For smooth transition */
+
+section {
+    height: 100vh;
+}
+
+.blue {background-color: blue;}
+.red {background-color: red;}
+.green {background-color: green;}
+
+header, footer {
+    color: white;
+    text-align: center;
+    height: 100px;
+    font-size: 5rem;
+} 
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+footer {
+    background-color: #000;
+    position: sticky;
+    bottom: 0;
+    font-size: 3rem;
+}
+
+a:visited {
+    color: white;
+}
+
+.social {
+    background-color: royalblue;
+    color: white;
+    font-size: inherit;
+    padding: 1rem;
+    position: fixed;
+    top: 30%;
+    left: 0;
+    z-index: 1; /* To keep the sticker above all elements */
+}

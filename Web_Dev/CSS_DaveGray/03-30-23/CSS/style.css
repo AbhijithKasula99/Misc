@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Fragment+Mono&family=Inter+Tight:wght@300;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fragment Mono', monospace;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    min-height: 400px;
+    margin-inline: auto;
+    border: 1px solid black;
+    display: flex; /* Turns the content vertically */
+    justify-content: center; /* Puts the content to the center */
+    gap: 1rem; /* Generates gap */
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+}
+
+.box {
+    /* min-width: 100px; */
+    height: 100px;
+    background-color: black;
+    color: white;
+    font-size: 2rem;   
+    
+    /* To adjust the numbers accordingly */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-grow: 1;
+    flex-basis: 100px;
+}
+
+.box:nth-child(2) {
+    flex-grow: 2; /* Each will get 100px for sure as the 2nd element has grow of 2 it will double  */
+}

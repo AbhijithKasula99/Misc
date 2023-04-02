@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
-h1 {
+section {
+    display: flow-root;
+}
+
+body {
     font-family: 'Inconsolata', monospace;
 }
 
@@ -20,7 +24,7 @@ h1 {
 
 /* Animation */
 
-#typewriter {
+.type-container {
     overflow: hidden;
     white-space: nowrap;
     margin: 0;
@@ -33,7 +37,7 @@ h1 {
     to { width: 100%; }
 }
 
-#typewriter::after {
+.type-container::after {
     content: "|";
     display: inline-block;
     margin-left: 5px;
@@ -43,5 +47,11 @@ h1 {
 @keyframes blink {
     50% {
       opacity: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        width: fit-content;
     }
 }

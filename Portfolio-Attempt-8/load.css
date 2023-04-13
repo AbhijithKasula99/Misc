@@ -18,6 +18,11 @@ body {
     font-style: normal;
 }
 
+.name {
+  color: green;
+  font-style: normal;
+}
+
 .type-container {
     height: 100vh;
     place-items: center;
@@ -28,8 +33,8 @@ body {
 .type-container {
     overflow: hidden;
     white-space: nowrap;
-    margin: 0;
-    animation: typing 3s steps(28, end) forwards;
+    margin-top: 15%;
+    animation: typing 6s steps(28, end) forwards;
     text-align: left;
 }
 
@@ -51,8 +56,8 @@ body {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 320px) {
     body {
-        width: fit-content;
+        display: flexbox;
     }
 }

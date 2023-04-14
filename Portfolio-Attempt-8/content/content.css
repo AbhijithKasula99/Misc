@@ -9,8 +9,12 @@
 }
 
 .introduction {
-  height: 100vh;
+  height: 120vh;
   display: flex;
+  background-image: url(../Images/Wall.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
   align-items: center;
   overflow: hidden;
 }
@@ -18,15 +22,7 @@
 .text {
   flex: 2.5;
   cursor: default;
-  font-size: 2vw;
-}
-
-.image {
-  flex: 1.5;
-  scale: 150%;
-  margin-top: 21.5%;
-  height: 100%;
-  width: 100%;
+  font-size: 1vw;
 }
 
 .nameContainer {
@@ -49,7 +45,7 @@
     text-align: center;
     line-height: 100vh;
     background-color: #ffd23f;
-    background-image: url('./Images/wave.svg');
+    background-image: url('../Images/wave.svg');
     background-repeat: no-repeat;
     background-size: contain; /* or cover, depending on how you want to scale the image */
     background-position: center bottom;      
@@ -107,7 +103,6 @@
   flex-direction: column;
   align-items: flex-start;
   overflow: hidden;
-  background-color: #ffd23f;
 }
 
 .text-block {

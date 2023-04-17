@@ -122,7 +122,7 @@
   color: white;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  z-index: 1; /* To ensure it remains on top and it isn't overlaid */
+  z-index: 9999; /* To ensure it remains on top and it isn't overlaid */
 }
 
 .marquee span {
@@ -154,7 +154,7 @@
 }
 
 .text-block {
-  margin-top: 4%;
+  margin-top: 3.8%;
   margin-left: -80%;
   animation: slide-in 2s ease-in-out forwards;
   text-align: left;
@@ -278,18 +278,34 @@
   text-align: center;
 }
 
+/* Inspiration */
+
+.inspiration {
+  background-color: green;
+  font-family: "Poppins", sans-serif;
+  height: 200vh;
+  color: #fff;
+}
+
+.inspiration h2 {
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  font-size: 6vw;
+  cursor: default;
+  text-align: center;
+}
+
 /* Contact */
 .contact {
   background-color: beige;
   font-family: "Poppins", sans-serif;
-  height: 200vh;
+  height: 150vh;
   color: #001011;
 }
 
 .contact h2 {
-  height: 100vh;
   font-family: 'Poppins', sans-serif;
-  font-size: 6vw;
+  font-size: 10vw;
   cursor: default;
   text-align: center;
 }
@@ -298,9 +314,10 @@
 
 nav {
   position: fixed;
-  top: 20px;
+  top: 30px;
   left: 0;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 16px;
   padding: 0 2vw;
@@ -329,10 +346,53 @@ nav a.active {
   color: #E00122;
 }
 
-nav a.hover {
-  text-decoration: underline;
+.nav a.hover {
+  background-color: #E00122;
+  color: #fff;
 }
 
-nav img {
-  scale: 200%;
+/* Contact Me section */
+
+.contact p {
+  font-size: 6vw;
+  font-weight: 400;
+}
+
+.email {
+  display: flex;
+  font-size: 6vw;
+  font-weight: 400;
+  justify-content: flex-start 30%;
+}
+
+.email p {
+  margin-top: 5%;
+}
+
+.btn {
+  padding-left: 2%;
+}
+
+/* Styling the copy button */
+
+#copy-btn {
+  display: inline-block;
+  padding: 0.5% 1.7%;
+  border: 0.1% solid #001011;
+  margin: 0 0.3% 0.3% 0;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "poppins", sans-serif;
+  font-weight: 300;
+  color: #fff;
+  background-color: #E00122;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+#copy-btn:hover {
+  background-color: #fff;
+  color: #E00122;
+  border: 1px solid #001011;
 }

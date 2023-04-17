@@ -35,3 +35,17 @@ const handleScroll = () => {
 };
 
 document.addEventListener("scroll", handleScroll);
+
+/* Copying email address */
+
+// JavaScript code to copy email address to clipboard
+function copyEmail() {
+  var email = document.getElementById("email");
+  var tempInput = document.createElement("input");
+  tempInput.setAttribute("value", email.innerText);
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  document.execCommand("copy");
+  document.body.removeChild(tempInput);
+  alert("Email address copied to clipboard!");
+}

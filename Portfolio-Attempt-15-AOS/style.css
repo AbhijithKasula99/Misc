@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Kannada:wght@500;700&family=Anek+Tamil:wght@500;700&family=Anek+Telugu:wght@500;700&family=Hind:wght@500;700&family=Inconsolata&family=Poppins:wght@300;400;600;700&display=swap");
+
+body {
+    height: 700vh;
+}
+
+.nameContainer {
+    margin-top: 500vh;
+    height: 100vh;
+    background-color: #3BCEAC;
+    font-size: 6vw;
+    cursor: default;
+    color: #001011;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    line-height: 100vh;
+    align-items: baseline;
+}

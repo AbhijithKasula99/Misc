@@ -64,6 +64,7 @@
   background-size: cover 30%;
   align-items: center;
   overflow: hidden;
+  background-color: #CCD5AE;
 }
 
 .text {
@@ -74,10 +75,10 @@
 
 .nameContainer {
     height: 100vh;
-    background-color: #3BCEAC;
+    background-color: #D4A373;
     font-size: 6vw;
     cursor: default;
-    color: #001011;
+    color: #7f5539;
     font-family: 'Poppins', sans-serif;
     text-align: center;
     line-height: 100vh;
@@ -91,12 +92,13 @@
     cursor: default;
     text-align: center;
     line-height: 100vh;
-    background-color: #ffd23f;
+    background-color: #DBE1BC;
     background-image: url('../Images/wave.svg');
     background-repeat: no-repeat;
     background-size: contain; /* or cover, depending on how you want to scale the image */
     background-position: center bottom; 
     overflow: hidden;     
+    color: #7f5539;
 }
 
 .role-2 {
@@ -105,9 +107,9 @@
     cursor: default;
     text-align: center;
     line-height: 100vh;
-    background-color: #9DB4C0;
+    background-color: #DEB68A;
     font-family: 'Poppins', sans-serif;
-    color: #001011;
+    color: #7f5539;
 }
 
 /* Marquee Animation */
@@ -163,7 +165,7 @@
   font-weight: 400;
   font-size: 3vw;
   padding: 1.5%;
-  color: #001011;
+  color: #7f5539;
 }
 
 .text-block:nth-child(1) {
@@ -208,10 +210,10 @@
 /* Projects */
 
 .projects {
-  background-color: #004E89;
+  background-color: #E9EDC9;
   font-family: "Poppins", sans-serif;
   height: 200vh;
-  color: #fff;
+  color: #7f5539;
 }
 
 .projects h1 {
@@ -233,10 +235,10 @@
 /* Skills */
 
 .skills {
-  background-color: aqua;
+  background-color: #E7C8A0;
   font-family: "Poppins", sans-serif;
   height: 200vh;
-  color: #001011;
+  color: #7f5539;
 }
 
 .skills h2 {
@@ -249,27 +251,32 @@
 
 /* work experience */
 .work-experience {
-  background-color: rebeccapurple;
+  background-color: #E9EDC9;
   font-family: "Poppins", sans-serif;
-  height: 200vh;
-  color: #001011;
+  height: 100vh;
+  color: #7f5539;
 }
 
 .work-experience h2 {
-  height: 100vh;
   font-family: 'Poppins', sans-serif;
   font-size: 6vw;
   cursor: default;
   text-align: center;
 }
 
+.work-experience li {
+  font-size: 2.5vw;
+  padding: 3%;
+  padding-left: 5%;
+}
+
 /* Inspiration */
 
 .inspiration {
-  background-color: green;
+  background-color: #F4F4D5;
   font-family: "Poppins", sans-serif;
   height: 200vh;
-  color: #fff;
+  color: #7f5539;
 }
 
 .inspiration h2 {
@@ -285,7 +292,7 @@
   background-color: beige;
   font-family: "Poppins", sans-serif;
   height: 150vh;
-  color: #001011;
+  color: #7f5539;
 }
 
 .contact h2 {
@@ -364,7 +371,7 @@
 #copy-btn {
   display: inline-block;
   padding: 0.5% 1.7%;
-  border: 0.1% solid #001011;
+  border: 0.1% solid #7f5539;
   margin: 0 0.3% 0.3% 0;
   border-radius: 5px;
   box-sizing: border-box;
@@ -380,7 +387,7 @@
 #copy-btn:hover {
   background-color: #fff;
   color: #E00122;
-  border: 1px solid #001011;
+  border: 1px solid #7f5539;
 }
 
 /* Education section */
@@ -388,10 +395,10 @@
 /* Education */
 
 .education {
-  background-color: beige;
+  background-color: #FAEDCD;
   font-family: "Poppins", sans-serif;
   height: 180vh;
-  color: #001011;
+  color: #7f5539;
   opacity: 0;
   transform: translateX(-50px);
   animation: slideIn 0.5s ease-in-out forwards;

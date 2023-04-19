@@ -556,10 +556,10 @@ body {
 /* Education */
 
 .education {
-  background-color: #fff;
+  background-color: #001011;
   font-family: "Poppins", sans-serif;
   height: 150vh;
-  color: #E00122;
+  color: #FFD23F;
   opacity: 0;
   transform: translateX(-50px);
   animation: slideIn 0.5s ease-in-out forwards;
@@ -570,6 +570,7 @@ body {
   font-size: 6vw;
   cursor: default;
   text-align: center;
+  color: #FFD23F;
 }
 
 .masters {
@@ -580,14 +581,27 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 5%;
+  background-color: #FFD23F;
+  color: #001011;
 }
 
-.masters h3 {
+.masters img {
+  margin-top: 3%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  padding: 0% 10%;
+  padding-top: 5%;
+}
+
+.masterdeg h3 {
   width: 100%;
   font-weight: 600;
   font-size: 3vw;
   text-align: center;
-  padding-top: 5%;
+  margin-top: 5%;
+  color: #FFD23F;
+  background-color: #001011;
 }
 
 .under {
@@ -597,6 +611,7 @@ align-items: center;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+background-color: #FFD23F;
 }
 
 .under img {
@@ -604,7 +619,7 @@ max-width: 100%;
 height: auto;
 display: block;
 padding: 0% 10%;
-padding-top: 10%;
+padding-top: 5%;
 }
 
 .under h3 {
@@ -612,7 +627,10 @@ width: 100%;
 font-weight: 600;
 font-size: 3vw;
 text-align: center;
-padding-top: 5%;
+margin-top: 5%;
+margin-bottom: 5%;
+color: #FFD23F;
+background-color: #001011;
 }
 
 @keyframes slideIn {

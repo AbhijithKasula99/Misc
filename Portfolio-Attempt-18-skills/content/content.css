@@ -29,6 +29,7 @@ body {
   line-height: 50px;
   font-size: 20px;
   z-index: 9999;
+  overflow-y: hidden;
 }
 
 .scroll-to-top:hover {
@@ -69,7 +70,7 @@ body {
   background-size: cover 30%;
   align-items: center;
   overflow: hidden;
-  background-color: #CCD5AE;
+  background-color: #FFD23F;
 }
 
 .text {
@@ -80,10 +81,10 @@ body {
 
 .nameContainer {
     height: 100vh;
-    background-color: #D4A373;
+    background-color: #001011;
     font-size: 6vw;
     cursor: default;
-    color: #7f5539;
+    color: #FFD23F;
     font-family: 'Poppins', sans-serif;
     text-align: center;
     line-height: 100vh;
@@ -97,13 +98,13 @@ body {
     cursor: default;
     text-align: center;
     line-height: 100vh;
-    background-color: #DBE1BC;
+    background-color: #FFD23F;
     background-image: url('../Images/wave.svg');
     background-repeat: no-repeat;
     background-size: contain; /* or cover, depending on how you want to scale the image */
     background-position: center bottom; 
     overflow: hidden;     
-    color: #7f5539;
+    color: #001011;
 }
 
 .role-2 {
@@ -112,9 +113,9 @@ body {
     cursor: default;
     text-align: center;
     line-height: 100vh;
-    background-color: #DEB68A;
+    background-color: #001011;
     font-family: 'Poppins', sans-serif;
-    color: #7f5539;
+    color: #FFD23F;
 }
 
 /* Marquee Animation */
@@ -170,7 +171,7 @@ body {
   font-weight: 400;
   font-size: 3vw;
   padding: 1.5%;
-  color: #7f5539;
+  color: #001011;
 }
 
 .text-block:nth-child(1) {
@@ -215,10 +216,10 @@ body {
 /* Projects */
 
 .projects {
-  background-color: #E9EDC9;
+  background-color: #FFD23F;
   font-family: "Poppins", sans-serif;
   height: 200vh;
-  color: #7f5539;
+  color: #001011;
 }
 
 .projects h1 {
@@ -240,10 +241,10 @@ body {
 /* Skills */
 
 .skills {
-  background-color: #E7C8A0;
+  background-color: #001011;
   font-family: "Poppins", sans-serif;
-  height: 200vh;
-  color: #7f5539;
+  height: 150vh;
+  color: #FFD23F;
 }
 
 .skills h2 {
@@ -260,6 +261,17 @@ body {
   text-align: left;
   padding-top: 5%;
   padding-left: 3%;
+}
+
+.skillcad {
+  width: 100%;
+  font-weight: 600;
+  font-size: 3vw;
+  text-align: left;
+  padding-top: 5%;
+  padding-left: 3%; 
+  background-color: #FFD23F;
+  color: #001011;
 }
 
 .skillsdeg #python {
@@ -292,29 +304,29 @@ body {
   height: 5rem;
 }
 
-.skillsdeg #solidworks {
-  width: 10rem;
-  height: 7rem;
+.skillcad #solidworks {
+  width: 18rem;
+  height: 6rem;
 }
 
-.skillsdeg #catia {
+.skillcad #catia {
   width: 7rem;
   height: 6rem;
 }
 
-.skillsdeg #fusion {
+.skillcad #fusion {
   width: 15rem;
   height: 8rem;
 }
 
-.skillsdeg #autocad {
-  width: 10rem;
+.skillcad #autocad {
+  width: 18rem;
   height: 6rem;
 }
 
-.skillsdeg #ansys {
-  width: 10rem;
-  height: 4rem;
+.skillcad #ansys {
+  width: 18rem;
+  height: 6rem;
 }
 
 .skillsdeg #after {
@@ -323,13 +335,13 @@ body {
 }
 
 .skillsdeg #illustrator {
-  width: 7rem;
-  height: 7rem;
+  width: 5rem;
+  height: 5rem;
 }
 
 .skillsdeg #photoshop {
-  width: 7rem;
-  height: 7rem;
+  width: 5rem;
+  height: 5rem;
 }
 
 .skillsdeg #blender {
@@ -339,11 +351,12 @@ body {
 
 
 /* work experience */
+
 .work-experience {
-  background-color: #E9EDC9;
+  background-color: #FFD23F;
   font-family: "Poppins", sans-serif;
   height: 100vh;
-  color: #7f5539;
+  color: #001011;
 }
 
 .work-experience h2 {
@@ -362,10 +375,11 @@ body {
 /* Inspiration */
 
 .inspiration {
-  background-color: #F4F4D5;
+  background-color: #FFD23F;
   font-family: "Poppins", sans-serif;
-  height: 800vh;
-  color: #7f5539;
+  height: 650vh;
+  color: #001011;
+  overflow-y: hidden;
 }
 
 .inspiration h2 {
@@ -375,12 +389,71 @@ body {
   text-align: center;
 }
 
+.quotes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  overflow-y: hidden;
+}
+
+.quotes img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  padding: 0% 20%;
+  padding-top: 0%;
+  justify-content: center;
+}
+
+.quotes h3 {
+  width: 100%;
+  font-weight: 600;
+  font-size: 3vw;
+  text-align: center;
+  padding-top: 5%;
+  margin-bottom: 5%;
+}
+
+.quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  background-color: #001011;
+  color: #FFD23F;
+}
+
+.quote img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  padding: 0% 20%;
+  padding-top: 5%;
+  justify-content: center;
+}
+
+.quote h3 {
+  width: 100%;
+  font-weight: 600;
+  font-size: 3vw;
+  text-align: center;
+  padding-top: 5%;
+}
+
 /* Contact */
+
 .contact {
-  background-color: beige;
+  background-color: #001011;
   font-family: "Poppins", sans-serif;
   height: 150vh;
-  color: #7f5539;
+  color: #FFD23F;
 }
 
 .contact h2 {
@@ -403,8 +476,8 @@ body {
   padding: 0 2vw;
   width: 100%;
   height: 64px;
-  background: #fff;
-  color: #E00122;
+  background: #001011;
+  color: #FFD23F;
   font-family: 'Poppins', sans-serif;
   box-shadow: 0 0 10px rgb(0 0 0 / 10%);
   word-spacing: 2vw;
@@ -459,7 +532,7 @@ body {
 #copy-btn {
   display: inline-block;
   padding: 0.5% 1.7%;
-  border: 0.1% solid #7f5539;
+  border: 0.1% solid #FFD23F;
   margin: 0 0.3% 0.3% 0;
   border-radius: 5px;
   box-sizing: border-box;
@@ -475,7 +548,7 @@ body {
 #copy-btn:hover {
   background-color: #fff;
   color: #E00122;
-  border: 1px solid #7f5539;
+  border: 1px solid #FFD23F;
 }
 
 /* Education section */
@@ -483,10 +556,10 @@ body {
 /* Education */
 
 .education {
-  background-color: #FAEDCD;
+  background-color: #fff;
   font-family: "Poppins", sans-serif;
-  height: 180vh;
-  color: #7f5539;
+  height: 150vh;
+  color: #E00122;
   opacity: 0;
   transform: translateX(-50px);
   animation: slideIn 0.5s ease-in-out forwards;
@@ -506,14 +579,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.masters img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  padding: 0% 10%;
-  padding-top: 10%;
+  margin-top: 5%;
 }
 
 .masters h3 {

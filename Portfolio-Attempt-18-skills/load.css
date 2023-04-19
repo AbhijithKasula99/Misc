@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+section {
+    display: flow-root;
+}
+
+body {
+    font-family: 'Inconsolata', monospace;
+}
+
+.candidate {
+    font-weight: lighter;
+}
+
+.table {
+    font-weight: lighter;
+    color: blue;
+    font-style: normal;
+}
+
+.name {
+  color: green;
+  font-style: normal;
+}
+
+.type-container {
+    height: 100vh;
+    place-items: center;
+}
+
+/* Animation */
+
+.type-container {
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 15%;
+    animation: typing 6s steps(28, end) forwards;
+    text-align: left;
+}
+
+@keyframes typing {
+    from { width: 0; margin-left: 0; } /* Change margin-left to 0 to start from the left */
+    to { width: 100%; }
+}
+
+.type-container::after {
+    content: "|";
+    display: inline-block;
+    margin-left: 5px;
+    animation: blink 0.5s infinite;
+}
+
+@keyframes blink {
+    50% {
+      opacity: 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    body {
+        display: flexbox;
+    }
+}

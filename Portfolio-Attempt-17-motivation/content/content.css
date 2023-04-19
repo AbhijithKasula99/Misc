@@ -1,0 +1,476 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Kannada:wght@500;700&family=Anek+Tamil:wght@500;700&family=Anek+Telugu:wght@500;700&family=Hind:wght@500;700&family=Inconsolata&family=Poppins:wght@300;400;600;700&display=swap");
+
+/* Master */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Scroll to top button */
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 1%;
+  right: 1%;
+  display: none;
+  width: 3rem;
+  height: 3rem;
+  background-color: #E00122;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  z-index: 9999;
+}
+
+.scroll-to-top:hover {
+  background-color: #fff;
+  color: #E00122;
+}
+
+@media screen and (min-width: 768px) {
+  .scroll-to-top {
+    right: 40px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .scroll-to-top {
+    right: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .scroll-to-top {
+    right: 80px;
+  }
+}
+
+.scroll-to-top.active {
+  display: block;
+}
+
+/* Introduction */
+
+.introduction {
+  height: 120vh;
+  display: flex;
+  background-image: url(../Images/Graffiti-Final.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover 30%;
+  align-items: center;
+  overflow: hidden;
+  background-color: #CCD5AE;
+}
+
+.text {
+  flex: 2.5;
+  cursor: default;
+  font-size: 1vw;
+}
+
+.nameContainer {
+    height: 100vh;
+    background-color: #D4A373;
+    font-size: 6vw;
+    cursor: default;
+    color: #7f5539;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    line-height: 100vh;
+    align-items: baseline;
+}
+
+.role-1 {
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: 6vw;
+    cursor: default;
+    text-align: center;
+    line-height: 100vh;
+    background-color: #DBE1BC;
+    background-image: url('../Images/wave.svg');
+    background-repeat: no-repeat;
+    background-size: contain; /* or cover, depending on how you want to scale the image */
+    background-position: center bottom; 
+    overflow: hidden;     
+    color: #7f5539;
+}
+
+.role-2 {
+    height: 100vh;
+    font-size: 6vw;
+    cursor: default;
+    text-align: center;
+    line-height: 100vh;
+    background-color: #DEB68A;
+    font-family: 'Poppins', sans-serif;
+    color: #7f5539;
+}
+
+/* Marquee Animation */
+
+.marquee {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  background-color: #E00122;
+  overflow: hidden;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  z-index: 9999; /* To ensure it remains on top and it isn't overlaid */
+}
+
+.marquee span {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  white-space: nowrap;
+  font-size: 20px;
+  line-height: 30px;
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    left: 100%;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+/* Content */
+
+.text-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+.text-block {
+  margin-top: 3.8%;
+  margin-left: -80%;
+  animation: slide-in 2s ease-in-out forwards;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 3vw;
+  padding: 1.5%;
+  color: #7f5539;
+}
+
+.text-block:nth-child(1) {
+  animation-delay: 0s;
+  font-weight: 700;
+}
+
+.text-block:nth-child(2) {
+  animation-delay: 0.25s;
+  font-family: "Anek Kannada", sans-serif;
+  font-weight: 700;
+}
+
+.text-block:nth-child(3) {
+  animation-delay: 0.75s;
+  font-family: "Anek Telugu", sans-serif;
+  font-weight: 700;
+}
+
+.text-block:nth-child(4) {
+  animation-delay: 1.25s;
+  font-family: "Anek Tamil", sans-serif;
+  font-weight: 700;
+}
+
+.text-block:nth-child(5) {
+  animation-delay: 1.5s;
+  font-family: 'Hind', sans-serif;
+  font-weight: 700;
+}
+
+@keyframes slide-in {
+  0% {
+    margin-left: -100%;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+
+
+/* Projects */
+
+.projects {
+  background-color: #E9EDC9;
+  font-family: "Poppins", sans-serif;
+  height: 200vh;
+  color: #7f5539;
+}
+
+.projects h1 {
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  font-size: 6vw;
+  cursor: default;
+  text-align: center;
+}
+
+.projects h2 {
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  font-size: 6vw;
+  cursor: default;
+  text-align: center;
+}
+
+/* Skills */
+
+.skills {
+  background-color: #E7C8A0;
+  font-family: "Poppins", sans-serif;
+  height: 200vh;
+  color: #7f5539;
+}
+
+.skills h2 {
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  font-size: 6vw;
+  cursor: default;
+  text-align: center;
+}
+
+/* work experience */
+.work-experience {
+  background-color: #E9EDC9;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  color: #7f5539;
+}
+
+.work-experience h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 6vw;
+  cursor: default;
+  text-align: center;
+}
+
+.work-experience li {
+  font-size: 2.5vw;
+  padding: 3%;
+  padding-left: 5%;
+}
+
+/* Inspiration */
+
+.inspiration {
+  background-color: #F4F4D5;
+  font-family: "Poppins", sans-serif;
+  height: 700vh;
+  color: #7f5539;
+}
+
+.inspiration h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 6vw;
+  cursor: default;
+  text-align: center;
+}
+
+/* Contact */
+.contact {
+  background-color: beige;
+  font-family: "Poppins", sans-serif;
+  height: 150vh;
+  color: #7f5539;
+}
+
+.contact h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 10vw;
+  cursor: default;
+  text-align: center;
+}
+
+/* Navigation bar */
+
+.navbar {
+  position: fixed;
+  top: 30px;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 0 2vw;
+  width: 100%;
+  height: 64px;
+  background: #fff;
+  color: #E00122;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+  word-spacing: 2vw;
+  z-index: 9999;
+}
+
+.navbar a {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.navbar span {
+  margin-right: 10px;
+}
+
+.navbar a.active {
+  color: #E00122;
+}
+
+.navbar a.hover {
+  background-color: #E00122;
+  color: #fff;
+}
+
+/* Contact Me section */
+
+.contact p {
+  font-size: 6vw;
+  font-weight: 400;
+}
+
+.email {
+  display: flex;
+  font-size: 6vw;
+  font-weight: 400;
+  justify-content: flex-start 30%;
+}
+
+.email p {
+  margin-top: 5%;
+}
+
+.btn {
+  padding-left: 2%;
+}
+
+/* Styling the copy button */
+
+#copy-btn {
+  display: inline-block;
+  padding: 0.5% 1.7%;
+  border: 0.1% solid #7f5539;
+  margin: 0 0.3% 0.3% 0;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "poppins", sans-serif;
+  font-weight: 300;
+  color: #fff;
+  background-color: #E00122;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+#copy-btn:hover {
+  background-color: #fff;
+  color: #E00122;
+  border: 1px solid #7f5539;
+}
+
+/* Education section */
+
+/* Education */
+
+.education {
+  background-color: #FAEDCD;
+  font-family: "Poppins", sans-serif;
+  height: 180vh;
+  color: #7f5539;
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideIn 0.5s ease-in-out forwards;
+}
+
+.education h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 6vw;
+  cursor: default;
+  text-align: center;
+}
+
+.masters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.masters img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  padding: 0% 10%;
+  padding-top: 10%;
+}
+
+.masters h3 {
+  width: 100%;
+  font-weight: 600;
+  font-size: 3vw;
+  text-align: center;
+  padding-top: 5%;
+}
+
+.under {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.under img {
+max-width: 100%;
+height: auto;
+display: block;
+padding: 0% 10%;
+padding-top: 10%;
+}
+
+.under h3 {
+width: 100%;
+font-weight: 600;
+font-size: 3vw;
+text-align: center;
+padding-top: 5%;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

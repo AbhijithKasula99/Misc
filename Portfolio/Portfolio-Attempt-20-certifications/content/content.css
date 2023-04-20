@@ -579,11 +579,12 @@ body {
 .education {
   background-color: #001011;
   font-family: "Poppins", sans-serif;
-  height: 150vh;
+  height: 180vh;
   color: #FFD23F;
   opacity: 0;
   transform: translateX(-50px);
-  animation: slideIn 0.5s ease-in-out forwards;
+  animation: slideIn 0.5s ease-in-out forwards;  
+  overflow-y: hidden
 }
 
 .education h2 {
@@ -621,37 +622,41 @@ body {
   font-size: 3vw;
   text-align: center;
   margin-top: 5%;
+  padding: 0% 0.25%;
+  border-radius: 10px;
   color: #FFD23F;
   background-color: #001011;
 }
 
 .under {
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-background-color: #FFD23F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFD23F;
 }
 
 .under img {
-max-width: 100%;
-height: auto;
-display: block;
-padding: 0% 10%;
-padding-top: 5%;
-}
+  max-width: 100%;
+  height: auto;
+  display: block;
+  padding: 0% 10%;
+  padding-top: 5%;
+  }
 
 .under h3 {
-width: 100%;
-font-weight: 600;
-font-size: 3vw;
-text-align: center;
-margin-top: 5%;
-margin-bottom: 5%;
-color: #FFD23F;
-background-color: #001011;
+  width: 100%;
+  font-weight: 600;
+  font-size: 3vw;
+  text-align: center;
+  padding: 0% 0.25%;
+  border-radius: 10px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  color: #FFD23F;
+  background-color: #001011;
 }
 
 @keyframes slideIn {

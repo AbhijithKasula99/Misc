@@ -64,13 +64,12 @@ body {
 .introduction {
   height: 120vh;
   display: flex;
-  background-image: url(../Images/Graffiti-Final.png);
+  background-image: url(../Images/dp.jpg);
   background-repeat: no-repeat;
   background-position: center bottom;
-  background-size: cover 30%;
+  background-size: cover;
   align-items: center;
   overflow: hidden;
-  background-color: #FFD23F;
 }
 
 .text {
@@ -171,7 +170,7 @@ body {
   font-weight: 400;
   font-size: 3vw;
   padding: 1.5%;
-  color: #001011;
+  color: #FFD23F;
 }
 
 .text-block:nth-child(1) {

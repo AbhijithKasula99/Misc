@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Kannada:wght@500;700&family=Anek+Tamil:wght@500;700&family=Anek+Telugu:wght@500;700&family=Hind:wght@500;700&family=Inconsolata&family=Poppins:wght@300;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.past {
+  height: 220vh;
+  overflow-y: hidden;
+  background-color: #001011;
+  padding: 5% 5%;
+}
+
+.past h1 {
+  height: 40vh;
+  color: #6fffe9;
+  font-family: "Poppins", sans-serif;
+  font-size: 6vw;
+  text-align: center;
+  overflow-y: hidden;
+}
+
+.past p {
+  height: 50vh;
+  padding-bottom: 0%;
+  padding-top: 0%;
+  color: #6fffe9;
+  font-size: 3vw;
+  font-family: "Poppins", sans-serif;
+  overflow-y: hidden;
+}
+
+.past :nth-child(4) {
+  height: 80vh; /* Third paragraph is big so had to adjust the height */
+}
+
+.present {
+  background-color: #6fffe9;
+  color: #001011;
+  height: 300vh;
+}
+
+.present p {
+  height: 50vh;
+  font-size: 3vw;
+  font-family: "Poppins", sans-serif;
+  overflow-y: hidden;
+  padding: 5% 5%;  
+}
+
+.present h3 {
+  font-weight: 700;
+  font-size: 5vw;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.present :nth-child(4) {
+  height: 60vh;
+}
+
+/* Scroll to top */
+
+/* Scroll to top button */
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 1%;
+  right: 1%;
+  display: none;
+  width: 3rem;
+  height: 3rem;
+  background-color: #001011;
+  color: #6fffe9;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  z-index: 9999;
+  overflow-y: hidden;
+  border: 5px solid #6fffe9;
+}
+
+.scroll-to-top:hover {
+  background-color: #6fffe9;
+  color: #001011;
+  border: #001011 5px solid;
+}
+
+@media screen and (min-width: 768px) {
+  .scroll-to-top {
+    right: 40px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .scroll-to-top {
+    right: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .scroll-to-top {
+    right: 80px;
+  }
+}
+
+.scroll-to-top.active {
+  display: block;
+}
+
+/* Adjusting height in mmobile view */
+
+@media (max-width: 768px) {
+
+    .past {
+        width: auto;
+        height: 80vh;
+    }
+
+    .past h1 {
+        height: 10vh;
+    }
+
+    .past p {
+        height: 15vh;
+    }
+
+    .past :nth-last-child() {
+        height: 25vh;
+    }
+
+
+    .present {
+        width: auto;
+        height: 100vh;
+    }
+
+    .present h1 {
+        height: 10vh;
+    }
+
+    .present :nth-child(4) {
+        height: 20vh;
+    }
+
+    .present p {
+        height: 15vh;
+    }
+
+}

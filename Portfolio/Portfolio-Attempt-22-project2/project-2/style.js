@@ -21,7 +21,7 @@ clipboard.on("error", function (e) {
 
 /* Download with download button */
 
-function downloadPDF() {
+/* function downloadPDF() {
   // Specify the URL of the PDF file to be downloaded
   var pdfURL = "Resume_Abhijith Kasula.pdf";
 
@@ -34,4 +34,4 @@ function downloadPDF() {
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
-}
+} */

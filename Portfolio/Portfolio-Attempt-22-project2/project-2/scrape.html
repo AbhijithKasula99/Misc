@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+    <link rel="shortcut icon" href="../Images/Favicon.jpg" type="image/x-icon">
     <!-- clipboard.js library -->
     <link
       rel="stylesheet"
@@ -13,7 +14,7 @@
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Animate on Scroll -->
-    <title>Scrape Kasula's resume</title>
+    <title>Scrape Kasula's Resume</title>
   </head>
   <body>
     <script src="style.js"></script>
@@ -50,7 +51,7 @@
         it.
       </p>
       <p data-aos="fade-left" data-aos-delay="500" data-aos-easing="linear">
-        I have chosen BeautifulSoup package in python to parse this site as
+        I have chosen Requests package in python to parse this site as
         python is dynamic and the code is easy to understand for non-technical
         background people.
       </p>
@@ -76,26 +77,20 @@
         data-aos-easing="linear"
         id="code-snippet"
       >
-        import requests
-        from bs4 import BeautifulSoup
+      import requests
 
-        # specify the URL of the website
-        url = 'https://www.example.com/'
-
-        # make a GET request to the website and get the content
-        response = requests.get(url)
-        content = response.content
-
-        # create a BeautifulSoup object to parse the HTML content
-        soup = BeautifulSoup(content, 'html.parser')
-
-        # find the link to the PDF file on the website
-        pdf_link = soup.find('a', href='example.pdf')['href']
-
-        # make a GET request to the PDF file and download it
-        pdf_response = requests.get(pdf_link)
-        with open('example.pdf', 'wb') as f:
-        f.write(pdf_response.content)
+      # specify the file URL
+      url = 'http://127.0.0.1:5501/project-2/Resume_Abhijith_Kasula.pdf'
+      
+      # send a GET request to the URL and save the response content to a file
+      response = requests.get(url)
+      if response.status_code == 200:
+          filename = 'Resume.pdf'
+          with open(filename, 'wb') as f:
+              f.write(response.content)
+          print(f"File '{filename}' downloaded successfully!")
+      else:
+          print("Failed to download file!")
       </pre>
       <button
         data-aos="fade-left"
@@ -118,7 +113,9 @@
         it.
       </p>
 
-      <button onclick="downloadPDF()" class="btn" data-aos="fade-left" data-aos-delay="500" data-aos-easing="linear">Download</button>
+      <a class="btn" href="Resume_Abhijith_Kasula.pdf" download>Download</a>
+
+      <!-- <button onclick="downloadPDF()" class="btn" data-aos="fade-left" data-aos-delay="500" data-aos-easing="linear">Download</button> -->
     </div>
   </body>
 </html>

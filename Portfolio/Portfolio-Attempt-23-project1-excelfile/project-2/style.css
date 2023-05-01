@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Kannada:wght@500;700&family=Anek+Tamil:wght@500;700&family=Anek+Telugu:wght@500;700&family=Hind:wght@500;700&family=Inconsolata&family=Poppins:wght@300;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* Script  */
+
+.past {
+  height: 200vh;
+  overflow-y: hidden;
+  background-color: #001011;
+  padding: 5% 5%;
+}
+
+.past h1 {
+  height: 40vh;
+  color: #18ff6d;
+  font-family: "Poppins", sans-serif;
+  font-size: 6vw;
+  text-align: center;
+  overflow-y: hidden;
+}
+
+.past p {
+  height: 50vh;
+  color: #18ff6d;
+  font-size: 3vw;
+  font-family: "Poppins", sans-serif;
+  overflow-y: hidden;
+  padding: 2%;
+}
+
+/* Scrape */
+
+.scrape {
+  height: 220vh;
+  overflow-y: hidden;
+  background-color: #18ff6d;
+  padding: 5% 5%;
+}
+
+.scrape h1 {
+  height: 20vh;
+  color: #001011;
+  font-family: "Poppins", sans-serif;
+  font-size: 6vw;
+  text-align: center;
+  overflow-y: hidden;
+}
+
+.scrape p {
+  height: 30vh;
+  padding-bottom: 0%;
+  padding-top: 0%;
+  color: #001011;
+  font-size: 3vw;
+  font-family: "Poppins", sans-serif;
+  overflow-y: hidden;
+}
+
+/* Copy Code */
+
+pre {
+  font-family: "Inconsolata", monospace;
+  padding-top: 0%;
+  font-size: 2vw;
+  align-items: center;
+  padding: 2.5% 2.5%;
+}
+
+#code-snippet {
+  border: 0.3rem solid #001011;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5% 1.7%;
+  border: 0.1% solid #001011;
+  margin: 5% 0%;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "poppins", sans-serif;
+  font-weight: 300;
+  color: #001011;
+  background-color: #18ff6d;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  background-color: #001011;
+  color: #18ff6d;
+  border: 1px solid #001011;
+}
+
+/* Download */
+
+.download {
+  background-color: #001011;
+  height: 80vh;
+  color: #18ff6d;
+  overflow-y: hidden;
+  padding: 5% 5%;
+  font-family: "poppins", sans-serif;
+  font-size: 2.5vw;
+}
+
+.download h1 {
+  height: 20vh;
+  color: #18ff6d;
+  font-family: "Poppins", sans-serif;
+  font-size: 6vw;
+  text-align: center;
+  overflow-y: hidden;
+}
+
+/* Scroll to top button */
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 1%;
+  right: 1%;
+  display: none;
+  width: 3rem;
+  height: 3rem;
+  background-color: #18ff6d;
+  color: #001011;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  z-index: 9999;
+  overflow-y: hidden;
+  border: 5px solid #18ff6d;
+}
+
+.scroll-to-top:hover {
+  background-color: #18ff6d;
+  color: #001011;
+  border: #001011 5px solid;
+}
+
+@media screen and (min-width: 768px) {
+  .scroll-to-top {
+    right: 40px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .scroll-to-top {
+    right: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .scroll-to-top {
+    right: 80px;
+  }
+}
+
+.scroll-to-top.active {
+  display: block;
+}
+
+/* Adjusting height in mmobile view */
+
+@media (max-width: 768px) {
+  .past {
+    width: auto;
+    height: auto;
+    min-height: 80vh;
+  }
+
+  .past h1 {
+    height: auto;
+    min-height: 10vh;
+  }
+
+  .past p {
+    height: auto;
+    min-height: 15vh;
+  }
+
+  .past :nth-last-child() {
+    height: auto;
+    min-height: 25vh;
+  }
+
+  .scrape {
+    width: auto;
+    height: auto;
+    min-height: 60vh;
+  }
+
+  .scrape h1 {
+    height: auto;
+    min-height: 10vh;
+  }
+
+  .scrape p {
+    height: auto;
+    min-height: 10vh;
+  }
+
+  .download {
+    height: auto;
+    min-height: 70vh;
+  }  
+}
+
+/* Navigation bar */
+
+.navbar {
+  position: fixed;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2vw;
+  width: 100%;
+  height: 24px;
+  background: #18ff6d;
+  color: #001011;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+  word-spacing: 1vw;
+  z-index: 9999;
+}
+
+.navbar a {
+  color: inherit;
+  padding-top: 15%;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.navbar span {
+  margin-right: 10px;
+}
+
+.navbar a.active {
+  color: #18ff6d;
+}
+
+.navbar a.hover {
+  background-color: #18ff6d;
+  color: #001011;
+}

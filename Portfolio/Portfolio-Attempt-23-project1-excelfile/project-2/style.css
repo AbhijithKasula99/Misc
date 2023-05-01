@@ -37,7 +37,7 @@
 /* Scrape */
 
 .scrape {
-  height: 220vh;
+  height: 240vh;
   overflow-y: hidden;
   background-color: #18ff6d;
   padding: 5% 5%;
@@ -167,13 +167,13 @@ pre {
   display: block;
 }
 
-/* Adjusting height in mmobile view */
+/* Adjusting height in mobile view */
 
 @media (max-width: 768px) {
   .past {
     width: auto;
     height: auto;
-    min-height: 80vh;
+    min-height: 60vh;
   }
 
   .past h1 {
@@ -209,7 +209,7 @@ pre {
 
   .download {
     height: auto;
-    min-height: 70vh;
+    min-height: 50vh;
   }  
 }
 

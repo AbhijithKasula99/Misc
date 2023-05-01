@@ -217,7 +217,7 @@ body {
 .projects {
   background-color: #FFD23F;
   font-family: "Poppins", sans-serif;
-  height: 200vh;
+  height: 120vh;
   color: #001011;
 }
 
@@ -283,7 +283,7 @@ body {
 
 .skillsdeg #mysql {
   width: 5rem;
-  height: 5rem;
+  height: 6rem;
 }
 
 .skillsdeg #excel {
@@ -677,7 +677,7 @@ body {
     height: auto;
     min-height: 50vh;
   }
-  
+
   .inspiration {
     height: auto;
     min-height: 100vh;

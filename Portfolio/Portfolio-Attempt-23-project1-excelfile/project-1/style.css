@@ -40,12 +40,12 @@
 .present {
   background-color: #6fffe9;
   color: #001011;
-  height: 300vh;
+  height: 350vh;
   overflow-y: hidden;
 }
 
 .present p {
-  height: 50vh;
+  height: 60vh;
   font-size: 3vw;
   font-family: "Poppins", sans-serif;
   overflow-y: hidden;

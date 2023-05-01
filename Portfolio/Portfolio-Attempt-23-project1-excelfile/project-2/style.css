@@ -37,7 +37,7 @@
 /* Scrape */
 
 .scrape {
-  height: 240vh;
+  height: 250vh;
   overflow-y: hidden;
   background-color: #18ff6d;
   padding: 5% 5%;
@@ -54,6 +54,16 @@
 
 .scrape p {
   height: 30vh;
+  padding-bottom: 0%;
+  padding-top: 0%;
+  color: #001011;
+  font-size: 3vw;
+  font-family: "Poppins", sans-serif;
+  overflow-y: hidden;
+}
+
+.scrape #out {
+  height: 40vh;
   padding-bottom: 0%;
   padding-top: 0%;
   color: #001011;

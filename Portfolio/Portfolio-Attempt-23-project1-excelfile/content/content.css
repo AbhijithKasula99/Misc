@@ -707,4 +707,9 @@ body {
     height: auto;
     min-height: 20vh;
   }
+
+  #ill {
+    height: auto;
+    min-height: 10vh;
+  } 
 }

@@ -30,8 +30,8 @@
     <div class="navbar">
       <span>
         <a href="#past">Introduction</a>
-        <a href="#scrape">Scrape</a>
         <a href="#download">Download</a>
+        <a href="#scrape">Scrape</a>
       </span>
     </div>
 
@@ -57,6 +57,21 @@
       </p>
     </div>
 
+    <!-- Download -->
+
+    <div class="download" id="download">
+      <h1>Direct Download</h1>
+
+      <p data-aos="fade-right" data-aos-delay="500" data-aos-easing="linear">
+        Use the Download Button to download the file if you don't want to scrape
+        it.
+      </p>
+
+      <a class="btn" href="Resume_Abhijith_Kasula.pdf" download>Download</a>
+
+      <!-- <button onclick="downloadPDF()" class="btn" data-aos="fade-left" data-aos-delay="500" data-aos-easing="linear">Download</button> -->
+    </div>
+
     <!-- Scrape -->
     <div class="scrape" id="scrape">
       <h1 data-aos="fade-down" data-aos-delay="500" data-aos-easing="linear">
@@ -80,7 +95,7 @@
       import requests
 
       # specify the file URL
-      url = 'http://127.0.0.1:5501/project-2/Resume_Abhijith_Kasula.pdf'
+      url = 'https://github.com/AbhijithKasula99/All-About-Abhijith/raw/524872dc802a9e710b65937768c198ac7599954d/project-2/Resume_Abhijith_Kasula.pdf'
       
       # send a GET request to the URL and save the response content to a file
       response = requests.get(url)
@@ -105,21 +120,6 @@
         If the output statement states that the file has been downloaded sucessfully then
         the resume will be available in the same directory where the jupyter notebook file is present. 
       </p>
-    </div>
-
-    <!-- Download -->
-
-    <div class="download" id="download">
-      <h1>Direct Download</h1>
-
-      <p data-aos="fade-right" data-aos-delay="500" data-aos-easing="linear">
-        Use the Download Button to download the file if you don't want to scrape
-        it.
-      </p>
-
-      <a class="btn" href="Resume_Abhijith_Kasula.pdf" download>Download</a>
-
-      <!-- <button onclick="downloadPDF()" class="btn" data-aos="fade-left" data-aos-delay="500" data-aos-easing="linear">Download</button> -->
-    </div>
+    </div>    
   </body>
 </html>

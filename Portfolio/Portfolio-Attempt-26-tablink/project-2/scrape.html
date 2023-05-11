@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+    <link rel="shortcut icon" href="../Images/icon.jpg" type="image/x-icon" />
+    <!-- clipboard.js library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Animate on Scroll -->
+    <title>Scrape Kasula's Resume</title>
+  </head>
+  <body>
+    <script src="style.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- Scroll to Top button -->
+    <a href="#" class="scroll-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+      <span>
+        <a href="#past">Introduction</a>
+        <a href="#download">Download</a>
+        <a href="#scrape">Scrape</a>
+      </span>
+    </div>
+
+    <!-- Script -->
+    <div class="past" id="past">
+      <h1 data-aos="fade-down" data-aos-delay="500" data-aos-easing="linear">
+        Scrape Kasula's Resume
+      </h1>
+      <p data-aos="fade-right" data-aos-delay="500" data-aos-easing="linear">
+        What if this page didn't have a download option and you had to scrape
+        this HTML page to get my resume in pdf format? Don't worry, I have left
+        a download button to download my resume right away!
+      </p>
+    </div>
+
+    <!-- Download -->
+
+    <div class="download" id="download">
+      <h1>Direct Download</h1>
+
+      <p data-aos="fade-right" data-aos-delay="500" data-aos-easing="linear">
+        Use the Download Button to download the file if you don't want to scrape
+        it.
+      </p>
+
+      <a class="btn" href="Resume_Abhijith_Kasula.pdf" download>Download</a>
+    </div>
+
+    <!-- Scrape -->
+    <div class="scrape" id="scrape">
+      <h1 data-aos="fade-down" data-aos-delay="500" data-aos-easing="linear">
+        Scrape
+      </h1>
+      <p data-aos="fade-left" data-aos-delay="500" data-aos-easing="linear" id="con">
+        As this page is a html site, there is a possibility to scrape out the
+        data available in this page, I have linked the resume in pdf format so
+        if you had to get the file using web scraping, this is how you would do
+        it.
+      </p>
+      <p data-aos="fade-left" data-aos-delay="500" data-aos-easing="linear">
+        I have chosen Requests package in python to parse this site as python is
+        dynamic and the code is easy to understand for non-technical background
+        people.
+      </p>
+      <p data-aos="fade-right" data-aos-delay="500" data-aos-easing="linear">
+        It is better to use Jupyter Notebook and I have added the code snippet,
+        that can be used to download my resume.
+      </p>
+      <p data-aos="fade-left" data-aos-delay="500" data-aos-easing="linear">
+        Use the copy button to copy the code snippet and paste it in your
+        notebook!
+      </p>
+
+      <pre
+        data-aos="fade-right"
+        data-aos-delay="500"
+        data-aos-easing="linear"
+        id="code-snippet"
+      >
+          import requests
+    
+          # specify the file URL
+          url = 'https://github.com/AbhijithKasula99/All-About-Abhijith/raw/524872dc802a9e710b65937768c198ac7599954d/project-2/Resume_Abhijith_Kasula.pdf'
+          
+          # send a GET request to the URL and save the response content to a file
+          response = requests.get(url)
+          if response.status_code == 200:
+              filename = 'Resume.pdf'
+              with open(filename, 'wb') as f:
+                  f.write(response.content)
+              print(f"File '{filename}' downloaded successfully!")
+          else:
+              print("Failed to download file!")
+          </pre
+      >
+      <button
+        data-aos="fade-left"
+        data-aos-delay="500"
+        data-aos-easing="linear"
+        class="btn"
+        data-clipboard-target="#code-snippet"
+      >
+        Copy
+      </button>
+      <p
+        data-aos="fade-right"
+        data-aos-delay="500"
+        data-aos-easing="linear"
+        id="out"
+      >
+        If the output statement states that the file has been downloaded
+        sucessfully then the resume will be available in the same directory
+        where the jupyter notebook file is present.
+      </p>
+    </div>
+  </body>
+</html>

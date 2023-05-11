@@ -147,28 +147,92 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Convert Yards to other units
-  ydInput.addEventListener('input', function () {
-  const ydValue = parseFloat(ydInput.value);
+  ydInput.addEventListener("input", function () {
+    const ydValue = parseFloat(ydInput.value);
 
-  mmInput.value = isNaN(ydValue) ? '' : (ydValue * 914.4).toFixed(1);
-  cmInput.value = isNaN(ydValue) ? '' : (ydValue * 91.44).toFixed(1);
-  mInput.value = isNaN(ydValue) ? '' : (ydValue * 0.9144).toFixed(2); 
-  kmInput.value = isNaN(ydValue) ? '' : (ydValue * 0.0009144).toFixed(6);
-  ftInput.value = isNaN(ydValue) ? '' : (ydValue * 3).toFixed(2);
-  inInput.value = isNaN(ydValue) ? '' : (ydValue * 36).toFixed(2);
-  miInput.value = isNaN(ydValue) ? '' : (ydValue * 0.00056818).toFixed(8);
-  }); 
+    mmInput.value = isNaN(ydValue) ? "" : (ydValue * 914.4).toFixed(1);
+    cmInput.value = isNaN(ydValue) ? "" : (ydValue * 91.44).toFixed(1);
+    mInput.value = isNaN(ydValue) ? "" : (ydValue * 0.9144).toFixed(2);
+    kmInput.value = isNaN(ydValue) ? "" : (ydValue * 0.0009144).toFixed(6);
+    ftInput.value = isNaN(ydValue) ? "" : (ydValue * 3).toFixed(2);
+    inInput.value = isNaN(ydValue) ? "" : (ydValue * 36).toFixed(2);
+    miInput.value = isNaN(ydValue) ? "" : (ydValue * 0.00056818).toFixed(8);
+  });
 
   // Convert Miles to other units
-  miInput.addEventListener('input', function () {
+  miInput.addEventListener("input", function () {
     const miValue = parseFloat(miInput.value);
 
-    mmInput.value = isNaN(miValue) ? '' : (miValue * 1609344).toFixed(1);
-    cmInput.value = isNaN(miValue) ? '' : (miValue * 160934.4).toFixed(1);
-    mInput.value = isNaN(miValue) ? '' : (miValue * 1609.344).toFixed(2);
-    kmInput.value = isNaN(miValue) ? '' : (miValue * 1.60934).toFixed(5);
-    ftInput.value = isNaN(miValue) ? '' : (miValue * 5280).toFixed(2);
-    inInput.value = isNaN(miValue) ? '' : (miValue * 63360).toFixed(2);
-    ydInput.value = isNaN(miValue) ? '' : (miValue * 1760).toFixed(2);
+    mmInput.value = isNaN(miValue) ? "" : (miValue * 1609344).toFixed(1);
+    cmInput.value = isNaN(miValue) ? "" : (miValue * 160934.4).toFixed(1);
+    mInput.value = isNaN(miValue) ? "" : (miValue * 1609.344).toFixed(2);
+    kmInput.value = isNaN(miValue) ? "" : (miValue * 1.60934).toFixed(5);
+    ftInput.value = isNaN(miValue) ? "" : (miValue * 5280).toFixed(2);
+    inInput.value = isNaN(miValue) ? "" : (miValue * 63360).toFixed(2);
+    ydInput.value = isNaN(miValue) ? "" : (miValue * 1760).toFixed(2);
   });
+});
+
+// Fetching the Thermal Conductivity value
+
+document.addEventListener("DOMContentLoaded", function () {
+  const elementSelect = document.getElementById("element-select");
+  const thermalConductivityElement = document.getElementById(
+    "thermal-conductivity"
+  );
+
+  // Load thermal conductivity data from external HTML file
+  // The dropdown is working
+/* s */
+
+// Load thermal conductivity data from external HTML file Attempt-2
+
+document.addEventListener("DOMContentLoaded", function () {
+  const elementSelect = document.getElementById("element-select");
+  const thermalConductivityElement = document.getElementById(
+    "thermal-conductivity"
+  );
+
+  // Load thermal conductivity data from external HTML file
+  fetch("../project-1/table/table.html")
+    .then((response) => response.text())
+    .then((data) => {
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(data, "text/html");
+      const table = doc.querySelector("table");
+
+      // Populate dropdown menu with element symbols
+      const elements = table.querySelectorAll("td:nth-child(2)");
+      elements.forEach((element) => {
+        const symbol = element.textContent;
+        const option = document.createElement("option");
+        option.value = symbol;
+        option.textContent = symbol;
+        elementSelect.appendChild(option);
+      });
+
+      // Display thermal conductivity row for selected element
+      elementSelect.addEventListener("change", function () {
+        const selectedSymbol = elementSelect.value;
+        const selectedRow = table.querySelector(
+          `tr:has(td:nth-child(2):contains(${selectedSymbol}))`
+        );
+        thermalConductivityElement.textContent = "";
+
+        if (selectedRow) {
+          const rows = table.querySelectorAll("tr");
+          rows.forEach((row) => {
+            const clonedRow = row.cloneNode(true);
+            thermalConductivityElement.appendChild(clonedRow);
+          });
+        } else {
+          thermalConductivityElement.textContent =
+            "No data found for the selected element.";
+        }
+      });
+    })
+    .catch((error) => {
+      console.error("Error loading thermal conductivity data:", error);
+    });
+});
 });

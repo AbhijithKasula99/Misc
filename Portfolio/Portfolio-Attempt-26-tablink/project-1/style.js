@@ -147,28 +147,61 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Convert Yards to other units
-  ydInput.addEventListener('input', function () {
-  const ydValue = parseFloat(ydInput.value);
+  ydInput.addEventListener("input", function () {
+    const ydValue = parseFloat(ydInput.value);
 
-  mmInput.value = isNaN(ydValue) ? '' : (ydValue * 914.4).toFixed(1);
-  cmInput.value = isNaN(ydValue) ? '' : (ydValue * 91.44).toFixed(1);
-  mInput.value = isNaN(ydValue) ? '' : (ydValue * 0.9144).toFixed(2); 
-  kmInput.value = isNaN(ydValue) ? '' : (ydValue * 0.0009144).toFixed(6);
-  ftInput.value = isNaN(ydValue) ? '' : (ydValue * 3).toFixed(2);
-  inInput.value = isNaN(ydValue) ? '' : (ydValue * 36).toFixed(2);
-  miInput.value = isNaN(ydValue) ? '' : (ydValue * 0.00056818).toFixed(8);
-  }); 
+    mmInput.value = isNaN(ydValue) ? "" : (ydValue * 914.4).toFixed(1);
+    cmInput.value = isNaN(ydValue) ? "" : (ydValue * 91.44).toFixed(1);
+    mInput.value = isNaN(ydValue) ? "" : (ydValue * 0.9144).toFixed(2);
+    kmInput.value = isNaN(ydValue) ? "" : (ydValue * 0.0009144).toFixed(6);
+    ftInput.value = isNaN(ydValue) ? "" : (ydValue * 3).toFixed(2);
+    inInput.value = isNaN(ydValue) ? "" : (ydValue * 36).toFixed(2);
+    miInput.value = isNaN(ydValue) ? "" : (ydValue * 0.00056818).toFixed(8);
+  });
 
   // Convert Miles to other units
-  miInput.addEventListener('input', function () {
+  miInput.addEventListener("input", function () {
     const miValue = parseFloat(miInput.value);
 
-    mmInput.value = isNaN(miValue) ? '' : (miValue * 1609344).toFixed(1);
-    cmInput.value = isNaN(miValue) ? '' : (miValue * 160934.4).toFixed(1);
-    mInput.value = isNaN(miValue) ? '' : (miValue * 1609.344).toFixed(2);
-    kmInput.value = isNaN(miValue) ? '' : (miValue * 1.60934).toFixed(5);
-    ftInput.value = isNaN(miValue) ? '' : (miValue * 5280).toFixed(2);
-    inInput.value = isNaN(miValue) ? '' : (miValue * 63360).toFixed(2);
-    ydInput.value = isNaN(miValue) ? '' : (miValue * 1760).toFixed(2);
+    mmInput.value = isNaN(miValue) ? "" : (miValue * 1609344).toFixed(1);
+    cmInput.value = isNaN(miValue) ? "" : (miValue * 160934.4).toFixed(1);
+    mInput.value = isNaN(miValue) ? "" : (miValue * 1609.344).toFixed(2);
+    kmInput.value = isNaN(miValue) ? "" : (miValue * 1.60934).toFixed(5);
+    ftInput.value = isNaN(miValue) ? "" : (miValue * 5280).toFixed(2);
+    inInput.value = isNaN(miValue) ? "" : (miValue * 63360).toFixed(2);
+    ydInput.value = isNaN(miValue) ? "" : (miValue * 1760).toFixed(2);
   });
+});
+
+// Dropdown Menu for choosing the element
+
+document.addEventListener("DOMContentLoaded", function () {
+  const dropdown = document.getElementById("dropdown");
+
+  // Fetch the data from the HTML file containing the table
+  fetch("../project-1/table/table.html")
+    .then((response) => response.text())
+    .then((data) => {
+      const parser = new DOMParser();
+      const htmlDoc = parser.parseFromString(data, "text/html");
+
+      // Get the table rows from the parsed HTML document
+      const tableRows = htmlDoc.querySelectorAll("tr");
+
+      // Iterate over the table rows starting from the second row
+      for (let i = 1; i < tableRows.length; i++) {
+        const tableData = tableRows[i].querySelectorAll("td");
+
+        // Get the value from the second column (index 1)
+        const text = tableData[1].textContent;
+
+        // Create a new option element and add it to the dropdown
+        const option = document.createElement("option");
+        option.textContent = text;
+        dropdown.appendChild(option);
+      }
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+    });
 });

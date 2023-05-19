@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../Images/icon.jpg"
+      type="image/x-icon"
+    />
+    <title>What would Kasula do?</title>
+    <link rel="stylesheet" href="../project-1/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Animate on Scroll -->
+  </head>
+  <body>
+    <!-- Animate on Scroll -->
+    <script src="style.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- Scroll to Top button -->
+    <a href="#" class="scroll-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+      <span>
+        <a href="#past">Introduction</a>
+        <a href="#present">Past</a>
+        <a href="#now">Present</a>
+      </span>
+    </div>
+
+    <!-- Script -->
+    <div class="past" id="past">
+      <h1 data-aos="fade-down" data-aos-delay="500" data-aos-easing="linear">
+        What would Kasula do?
+      </h1>
+      <p data-aos="fade-right" data-aos-delay="500" data-aos-easing="linear">
+        Taking datasets and performing analysis is something routine and many
+        aspiring data analysts would do and showcase their work as projects.
+        This is what I have been constantly hearing throughout my networking
+        journey.
+      </p>
+      <p data-aos="fade-left" data-aos-delay="500" data-aos-easing="linear">
+        I gave thought to why doing something routine or repeated when studying
+        data is all about exploring innovative ways to get to conclusions and
+        data can be in any form.
+      </p>
+      <p data-aos="fade-left" data-aos-delay="500" data-aos-easing="linear">
+        To tell a successful story we need a strong dataset that can act as
+        proof for it, I failed many interviews in the past because I was
+        affirming to the interviewee's that I am capable, creative, and worthy
+        enough to get the job done and that is required for the role without any
+        proof or data. I believe that I gave them room to choose someone else
+        over me.
+      </p>
+    </div>
+
+    <!-- Present -->
+    <div class="present" id="present">
+      <p data-aos="fade-right" data-aos-delay="500" data-aos-easing="linear">
+        I am trying to change that by narrating a short story about how I have
+        been constantly reinventing myself and trying to implement whatever I
+        learn to make my life easy.
+      </p>
+      <h3 data-aos="fade-down" data-aos-delay="500" data-aos-easing="linear">
+        Let me narrate you a story now!
+      </h3>
+      <p data-aos="fade-left" data-aos-delay="500" data-aos-easing="linear">
+        I did my bachelor's in Mechanical Engineering and that comes with
+        Thermodynamics as a core subject and that is something tough for anyone
+        to pursue. If I am given a set of 30 problems to solve and determine the
+        heat flux in each problem.
+      </p>
+      <p data-aos="fade-right" data-aos-delay="500" data-aos-easing="linear">
+        If this task was assigned to me in 2017, my approach would be to perform
+        hand calculations and everything would be on paper and I would use a
+        handbook and a calculator for referring the external values. I would put
+        additional effort into remembering the unit conversions.
+      </p>
+      <p data-aos="fade-left" data-aos-delay="500" data-aos-easing="linear">
+        If the same task was assigned to me in 2020, my approach would be to
+        build an Excel sheet with all the necessary data, with a formulas
+        feature, and the answer would be generated in multiple unit combinations
+        by performing the conversions.
+      </p>
+
+      <a class="btn" href="Thermal_Conductivity_Calculator.xlsx" download>Download</a>
+
+      <p data-aos="fade-right" data-aos-delay="500" data-aos-easing="linear">
+        If this was the case in 2022, I would get data from free databases that
+        would give me accurate information and then build a calculator that
+        would take in inputs and then give out the necessary data as the answer.
+      </p>
+    </div>
+
+    <!-- Calculator -->
+    <div class="calculator" id="now">
+      <p data-aos="fade-left" data-aos-delay="500" data-aos-easing="linear">
+        I have built a calculator using basic javascript, first when the user might have 
+        the input values in specific units so I would like to build a temperature and distance converter. 
+      </p>
+
+      <h1 data-aos="fade-down" data-aos-delay="500" data-aos-easing="linear">Temperature Converter</h1>
+
+      <div data-aos="fade-left" data-aos-delay="500" data-aos-easing="linear" class="converter-container">
+          <div class="input-group">
+              <label for="celsius-input">Celsius (°C):</label>
+              <input type="number" id="celsius-input" step="0.1" placeholder="Enter temperature in Celsius">
+          </div>
+  
+          <div class="input-group">
+              <label for="fahrenheit-input">Fahrenheit (°F):</label>
+              <input type="number" id="fahrenheit-input" step="0.1" placeholder="Enter temperature in Fahrenheit">
+          </div>
+  
+          <div class="input-group">
+              <label for="kelvin-input">Kelvin (K):</label>
+              <input type="number" id="kelvin-input" step="0.1" placeholder="Enter temperature in Kelvin">
+          </div>
+      </div>
+
+      <h1 data-aos="fade-down" data-aos-delay="500" data-aos-easing="linear">Distance Converter</h1>
+
+    <div data-aos="fade-right" data-aos-delay="500" data-aos-easing="linear" class="converter-container">
+        <div class="input-group">
+            <label for="mm-input">Millimeters (mm):</label>
+            <input type="number" id="mm-input" step="0.1" placeholder="Enter distance in millimeters">
+        </div>
+
+        <div class="input-group">
+            <label for="cm-input">Centimeters (cm):</label>
+            <input type="number" id="cm-input" step="0.1" placeholder="Enter distance in centimeters">
+        </div>
+
+        <div class="input-group">
+            <label for="m-input">Meters (m):</label>
+            <input type="number" id="m-input" step="0.1" placeholder="Enter distance in meters">
+        </div>
+
+        <div class="input-group">
+            <label for="km-input">Kilometers (km):</label>
+            <input type="number" id="km-input" step="0.1" placeholder="Enter distance in kilometers">
+        </div>
+
+        <div class="input-group">
+            <label for="ft-input">Feet (ft):</label>
+            <input type="number" id="ft-input" step="0.1" placeholder="Enter distance in feet">
+        </div>
+
+        <div class="input-group">
+            <label for="in-input">Inches (in):</label>
+            <input type="number" id="in-input" step="0.1" placeholder="Enter distance in inches">
+        </div>
+
+        <div class="input-group">
+            <label for="yd-input">Yards (yd):</label>
+            <input type="number" id="yd-input" step="0.1" placeholder="Enter distance in yards">
+        </div>
+
+        <div class="input-group">
+            <label for="mi-input">Miles (mi):</label>
+            <input type="number" id="mi-input" step="0.1" placeholder="Enter distance in miles">
+        </div>
+        
+      <h1 data-aos="fade-down" data-aos-delay="500" data-aos-easing="linear">Thermal Conductivity Value</h1>
+
+      <div data-aos="fade-left" data-aos-delay="500" data-aos-easing="linear" class="converter-container">
+            <div class="input-group">
+                <label data-aos="fade-left" data-aos-delay="500" data-aos-easing="linear" for="celsius-input">Choose the element:</label>
+                <select data-aos="fade-left" data-aos-delay="500" data-aos-easing="linear" id="dropdown"></select>
+                <input data-aos="fade-left" data-aos-delay="500" data-aos-easing="linear" type="number" id="celsius-input" step="0.1" placeholder="Use the dropdown to get the value here">
+            </div>  
+    </div>
+  </body>
+</html>

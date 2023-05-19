@@ -104,12 +104,12 @@
 
     <!-- Calculator -->
     <div class="calculator" id="now">
-      <p data-aos="fade-left" data-aos-delay="500" data-aos-easing="linear">
+      <p data-aos="fade-left" data-aos-delay="500" data-aos-easing="linear" id="a1">
         I have built a calculator using basic javascript, first when the user might have 
         the input values in specific units so I would like to build a temperature and distance converter. 
       </p>
 
-      <h1 data-aos="fade-down" data-aos-delay="500" data-aos-easing="linear">Temperature Converter</h1>
+      <h1 data-aos="fade-down" data-aos-delay="500" data-aos-easing="linear" id="a2">Temperature Converter</h1>
 
       <div data-aos="fade-left" data-aos-delay="500" data-aos-easing="linear" class="converter-container">
           <div class="input-group">
@@ -128,7 +128,7 @@
           </div>
       </div>
 
-      <h1 data-aos="fade-down" data-aos-delay="500" data-aos-easing="linear">Distance Converter</h1>
+      <h1 data-aos="fade-down" data-aos-delay="500" data-aos-easing="linear" id="a2">Distance Converter</h1>
 
     <div data-aos="fade-right" data-aos-delay="500" data-aos-easing="linear" class="converter-container">
         <div class="input-group">
@@ -171,14 +171,35 @@
             <input type="number" id="mi-input" step="0.1" placeholder="Enter distance in miles">
         </div>
         
-      <h1 data-aos="fade-down" data-aos-delay="500" data-aos-easing="linear">Thermal Conductivity Value</h1>
+      <h1 data-aos="fade-down" data-aos-delay="500" data-aos-easing="linear" id="constant">Thermal Conductivity Constant</h1>
 
       <div data-aos="fade-left" data-aos-delay="500" data-aos-easing="linear" class="converter-container">
             <div class="input-group">
-                <label data-aos="fade-left" data-aos-delay="500" data-aos-easing="linear" for="celsius-input">Choose the element:</label>
+                <label data-aos="fade-left" data-aos-delay="500" data-aos-easing="linear" for="celsius-input">Choose the element and get the corresponding value</label>
                 <select data-aos="fade-left" data-aos-delay="500" data-aos-easing="linear" id="dropdown"></select>
-                <input data-aos="fade-left" data-aos-delay="500" data-aos-easing="linear" type="number" id="celsius-input" step="0.1" placeholder="Use the dropdown to get the value here">
-            </div>  
+                <!-- <input data-aos="fade-left" data-aos-delay="500" data-aos-easing="linear" type="number" id="celsius-input" step="0.1" placeholder="Use the dropdown to get the value here"> -->
+                <input data-aos="fade-left" data-aos-delay="500" data-aos-easing="linear" type="text" id="resultField" readonly>
+            </div> 
+      <!-- Heat Flux -->
+      <div data-aos="fade-right" data-aos-delay="500" data-aos-easing="linear"class="heat">
+        <h1 data-aos="fade-down" data-aos-delay="500" data-aos-easing="linear" id="a2">Heat Flux Calculator</h1>
+        <div class="input-container">
+          <label for="temp-difference">Temperature Difference (°F):</label>
+          <input type="number" id="temp-difference" placeholder="Enter temperature difference">
+        </div>
+        <div class="input-container">
+          <label for="thermal-conductivity">Thermal Conductivity (W/(m·K)): </label>
+          <input type="number" id="thermal-conductivity" placeholder="Enter thermal conductivity">
+        </div>
+        <div class="input-container">
+          <label for="distance">Distance (ft):</label>
+          <input type="number" id="distance" placeholder="Enter distance">
+        </div>
+        <div class="result-container">
+          <button class="btn" id="calculate-btn">Calculate</button>
+          <input type="text" id="heat-flux" id="sol" readonly>
+        </div>
+      </div>
     </div>
   </body>
 </html>

@@ -175,7 +175,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /* Dropdown Menu */
 
-document.addEventListener('DOMContentLoaded', function() {
+/* document.addEventListener('DOMContentLoaded', function() {
   const dropdown = document.getElementById('dropdown');
   const thermalDataFile = '../project-1/table/table.html'; // Replace with the path to your thermal conductivity data HTML file
 
@@ -205,4 +205,89 @@ document.addEventListener('DOMContentLoaded', function() {
     .catch(error => {
       console.error('Error:', error);
     });
+});  */
+
+document.addEventListener('DOMContentLoaded', function() {
+  const dropdown = document.getElementById('dropdown');
+  const resultField = document.getElementById('resultField');
+
+  // Fetch the data from the HTML file containing the thermal conductivity table
+  fetch('../project-1/table/table.html')
+    .then(response => response.text())
+    .then(data => {
+      const parser = new DOMParser();
+      const htmlDoc = parser.parseFromString(data, 'text/html');
+      
+      // Get the table rows from the parsed HTML document
+      const tableRows = htmlDoc.querySelectorAll('tr');
+      
+      // Create an array to store the values from the 2nd and 4th columns
+      const dataRows = [];
+      
+      // Iterate over the table rows starting from the second row
+      for (let i = 1; i < tableRows.length; i++) {
+        const tableData = tableRows[i].querySelectorAll('td');
+        
+        // Get the value from the second column (index 1)
+        const key = tableData[1].textContent;
+        
+        // Get the value from the fourth column (index 3)
+        const value = tableData[3].textContent;
+        
+        // Create an object for the row data and add it to the array
+        const rowData = {
+          key: key,
+          value: value
+        };
+        dataRows.push(rowData);
+        
+        // Create a new option element and add it to the dropdown
+        const option = document.createElement('option');
+        option.textContent = key;
+        dropdown.appendChild(option);
+      }
+
+      // Event listener for the dropdown change event
+      dropdown.addEventListener('change', function() {
+        const selectedValue = dropdown.value;
+        
+        // Find the corresponding value in the dataRows array
+        const selectedRow = dataRows.find(row => row.key === selectedValue);
+        
+        // Display the corresponding value in the result field
+        if (selectedRow) {
+          resultField.value = selectedRow.value;
+        } else {
+          resultField.value = '';
+        }
+      });
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
+});
+
+/* Heat Flux Calculator */
+
+document.addEventListener('DOMContentLoaded', function() {
+  const calculateBtn = document.getElementById('calculate-btn');
+  const tempDifferenceInput = document.getElementById('temp-difference');
+  const thermalConductivityInput = document.getElementById('thermal-conductivity');
+  const distanceInput = document.getElementById('distance');
+  const heatFluxOutput = document.getElementById('heat-flux');
+
+  calculateBtn.addEventListener('click', function() {
+    const tempDifference = parseFloat(tempDifferenceInput.value);
+    const thermalConductivity = parseFloat(thermalConductivityInput.value);
+    const distance = parseFloat(distanceInput.value);
+
+    // Check if all inputs are valid numbers
+    if (isNaN(tempDifference) || isNaN(thermalConductivity) || isNaN(distance)) {
+      heatFluxOutput.value = 'Invalid input';
+    } else {
+      // Calculate the heat flux
+      const heatFlux = (tempDifference * thermalConductivity) / distance;
+      heatFluxOutput.value = heatFlux.toFixed(2) + ' W/m²';
+    }
+  });
 });

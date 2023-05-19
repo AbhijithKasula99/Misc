@@ -225,6 +225,31 @@ button {
       height: auto;
       height: 2vh;
     }
+
+    #a1 {
+      height: auto;
+      height: 8vh;
+    }
+
+    #a2 {
+      height: auto;
+      height: 4vh;
+    }
+
+    #constant {
+      height: auto;
+      height: 4vh;
+    }
+
+    .calculator {
+      height: auto;
+      height: 150vh;
+    }
+
+    #sol {
+      height: auto;
+      width: 6vw;
+    }
 }
 
 /* Download Button */
@@ -288,4 +313,23 @@ button {
   color: #001011;
   margin: 1vw;
   padding: 0.5vw;
+}
+
+#resultField {
+  background-color: #6fffe9;
+  color: #001011;
+  margin: 1vw;
+  padding: 1vw;
+}
+
+#constant {
+  color: #6fffe9;
+  font-size: 5vw;
+}
+
+#heat-flux {
+  background-color: #6fffe9;
+  color: #001011;
+  margin: 1vw;
+  padding: 1vw;
 }

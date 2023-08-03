@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Kannada:wght@500;700&family=Anek+Tamil:wght@500;700&family=Anek+Telugu:wght@500;700&family=Hind:wght@500;700&family=Inconsolata&family=Poppins:wght@300;400;600;700&display=swap");
+
+body {
+    background-color: #001011;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    background-color: #001011;
+    color: #fff;
+}
+
+th, td {
+    border: 1px solid #fff;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #001011;
+    font-weight: 900;
+}
+
+td {
+    font-weight: 300;
+}
+
+/* Adjusting height in mobile view */
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 5vw;
+    }
+}  

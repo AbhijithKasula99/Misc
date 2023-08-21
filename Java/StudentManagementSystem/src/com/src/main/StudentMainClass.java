@@ -8,7 +8,7 @@ import java.util.Scanner; // This is predefined and can be imported
 public class StudentMainClass 
 {
 
-	public static void main(String[] args) 
+	public static void main(String[] args 
 	{
 		/* First Student
 		Student s1 = new Student(); // Creation of an object 

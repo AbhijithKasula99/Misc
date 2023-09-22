@@ -1,0 +1,16 @@
+Taking datasets and performing analysis is something routine and many aspiring data analysts would do and showcase their work as projects. This is what I have been constantly hearing throughout my networking journey.
+
+I gave thought to why doing something routine or repeated when studying data is all about exploring innovative ways to get to conclusions and data can be in any form. 
+
+To tell a successful story we need a strong dataset that can act as proof for it, I failed many interviews in the past because I was affirming to the interviewee’s that I am capable, creative, and worthy enough to get the job done and that is required for the role without any proof or data. I believe that I gave them room to choose someone else over me. 
+
+I am trying to change that by narrating a short story about how I have been constantly reinventing myself and trying to implement whatever I learn to make my life easy. 
+
+I did my bachelor’s in Mechanical Engineering and that comes with Thermodynamics as a core subject and that is something tough for anyone to pursue. If I am given a set of 30 problems to solve and determine the heat flux in each problem. 
+
+If this task was assigned to me in 2017, my approach would be to perform hand calculations and everything would be on paper and I would use a handbook and a calculator for referring the external values. I would put additional effort into remembering the unit conversions. 
+(Mention all the unit conversations for all the values)
+
+If the same task was assigned to me in 2020, my approach would be to build an Excel sheet with all the necessary data, with a formulas feature, and the answer would be generated in multiple unit combinations by performing the conversions. 
+
+If this was the case in 2022, I would get data from free databases that would give me accurate information and then build a calculator that would take in inputs and then give out the necessary data as the answer.

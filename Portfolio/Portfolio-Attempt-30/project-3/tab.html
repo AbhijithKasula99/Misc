@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="tab.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+    <link rel="shortcut icon" href="../Images/icon.jpg" type="image/x-icon" />
+    <!-- clipboard.js library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Animate on Scroll -->
+    <title>Real Estate Dashboard</title>
+  </head>
+  <body>
+    <script src="tab.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- Scroll to Top button -->
+    <a href="#" class="scroll-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+      <span>
+        <a href="#past">Introduction</a>
+        <a href="#scrape">Storyline</a>
+        <a
+          href="https://public.tableau.com/views/Houses_16836849154620/Dashboard1?:language=en-GB&publish=yes&:display_count=n&:origin=viz_share_link"
+          >View</a
+        >
+      </span>
+    </div>
+
+    <!-- Script -->
+    <div class="past" id="past">
+      <h1 data-aos="fade-down" data-aos-delay="500" data-aos-easing="linear">
+        Real Estate Dashboard
+      </h1>
+      <p data-aos="fade-right" data-aos-delay="500" data-aos-easing="linear">
+        This dashboard provides quick insights for finding a house in East
+        Coast. It is made using Tableau and use the View Button to see the
+        dashboard that is posted on Tableau Public Site.
+      </p>
+      <a
+        data-aos="fade-right"
+        data-aos-delay="500"
+        data-aos-easing="linear"
+        href="https://public.tableau.com/views/Houses_16836849154620/Dashboard1?:language=en-GB&publish=yes&:display_count=n&:origin=viz_share_link"
+        ><button class="btn">View</button></a
+      >
+    </div>
+
+    <!-- Scrape -->
+    <div class="scrape" id="scrape">
+      <h1 data-aos="fade-down" data-aos-delay="500" data-aos-easing="linear">
+        Storyline
+      </h1>
+      <p
+        data-aos="fade-left"
+        data-aos-delay="500"
+        data-aos-easing="linear"
+        id="con"
+      >
+        Let's assume you are an Analyst at a real estate agency and you have
+        access to huge set of listings, but you want to build something for the
+        marketing team in such a way that the based on the clients requirements
+        they can quickly filter the listings on sale and show the best ones that
+        match their requirement.
+      </p>
+      <p data-aos="fade-left" data-aos-delay="500" data-aos-easing="linear">
+        They could have built out an application but the maintainence and
+        development costs are not feasible for a newly started agency, so as an
+        Analyst you have come up with idea to build a dashboard that has access
+        to raw data of listings and filter the ones that would help the
+        marketing team to show the best ones to the client.
+      </p>
+      <p data-aos="fade-right" data-aos-delay="500" data-aos-easing="linear">
+        Now, a client is looking for a house that can be refurbished and listed
+        on Airbnb for additional income, But the client has certain conditions
+        to be metand those are budget range, house size, bedrooms and bathroom
+        numbers.
+      </p>
+      <p data-aos="fade-left" data-aos-delay="500" data-aos-easing="linear">
+        Building a specific dashboard for that single client is not an efficient
+        thing, We can build a dashboard that has specific region listings let's
+        say Northeast coast as of now. We need to show listings that can fit in
+        the price range, size, location and the state the client is looking for.
+      </p>
+      <p
+        data-aos="fade-right"
+        data-aos-delay="500"
+        data-aos-easing="linear"
+        id="out"
+      >
+        We can extract the data and filter the uneccessary data and then use the
+        rest to visualize and create amazing filters. So the team can look up
+        and revert back to the client as soon as possible.
+      </p>
+    </div>
+  </body>
+</html>

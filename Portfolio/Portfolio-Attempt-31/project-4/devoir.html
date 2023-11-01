@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="devoir.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+    <link rel="shortcut icon" href="../Images/icon.jpg" type="image/x-icon" />
+    <!-- clipboard.js library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Animate on Scroll -->
+    <title>Devoir Architecture</title>
+  </head>
+  <body>
+    <script src="devoir.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- Scroll to Top button -->
+    <a href="#" class="scroll-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+      <span>
+        <a href="#past">Introduction</a>
+        <a href="#download">Download</a>
+        <a href="#scrape">Detail</a>
+      </span>
+    </div>
+
+    <!-- Script -->
+    <div class="past" id="past">
+      <h1 data-aos="fade-down" data-aos-delay="500" data-aos-easing="linear">
+        Devoir's Architecture
+      </h1>
+      <p data-aos="fade-right" data-aos-delay="500" data-aos-easing="linear">
+        Devoir had an outstanding AWS architecture designed by their senior
+        network architects, this architecture consisted of wide range of AWS
+        services that were used to ensure that data from the medical devices
+        from different locations were extracted, transformed and loaded in
+        real-time.
+      </p>
+    </div>
+
+    <!-- Download -->
+
+    <div class="download" id="download">
+      <h1>Direct Download</h1>
+
+      <p data-aos="fade-right" data-aos-delay="500" data-aos-easing="linear">
+        Use the Download Button to download the file that shows the detailed
+        architecture hosted on AWS.
+      </p>
+
+      <a class="btn" href="Devoir_Architecture.pdf" download>Download</a>
+    </div>
+
+    <!-- Scrape -->
+    <div class="scrape" id="scrape">
+      <h1 data-aos="fade-down" data-aos-delay="500" data-aos-easing="linear">
+        Explanation
+      </h1>
+      <p
+        data-aos="fade-left"
+        data-aos-delay="500"
+        data-aos-easing="linear"
+        id="con"
+      >
+        This specific architecture can predict the maintenance of the latest
+        medical equipment system utilizing the vast suite of AWS services. An
+        additional advantage is that this architecture functions as per
+        <a
+          class="link"
+          href="https://www.cdc.gov/phlp/publications/topic/hipaa.html"
+          >HIPAA</a
+        >
+        compliance to ensure the data transfer process is very secure.
+      </p>
+      <p data-aos="fade-right" data-aos-delay="500" data-aos-easing="linear">
+        Talking about the services we use
+        <a class="link" href="https://aws.amazon.com/kinesis/data-firehose/"
+          >AWS Kinesis Firehose</a
+        >
+        for Data Ingestion,
+        <a class="link" href="https://aws.amazon.com/s3/">AWS S3</a>
+        for storing the raw data, and
+        <a class="link" href="https://aws.amazon.com/redshift/">AWS Redshift</a>
+        to store the structured data ensuring durability, availability, and
+        reusability. With the help of
+        <a class="link" href="https://aws.amazon.com/lambda/">AWS Lambda</a>, we
+        could process the data in real-time without servers and then we used
+        <a class="link" href="https://aws.amazon.com/glue/">AWS Glue</a> for ETL
+        operations.
+      </p>
+      <img
+        class="arc"
+        data-aos="fade-left"
+        src="Devoir_Architecture.jpg"
+        alt="Devoir Architecture"
+      />
+      <p data-aos="fade-right" data-aos-delay="500" data-aos-easing="linear">
+        <a class="link" href="https://aws.amazon.com/sagemaker/"
+          >AWS Sagemaker</a
+        >
+        was implemented to develop predictive models that could forecast
+        potential equipment failures. These models were trained on historical
+        data and were continuously refined based on real-time data. Interactive
+        Dashboards were built on
+        <a class="link" href="https://aws.amazon.com/quicksight/"
+          >AWS QuickSight</a
+        >
+        to provide real-time insights to equipment health.
+      </p>
+      <p data-aos="fade-left" data-aos-delay="500" data-aos-easing="linear">
+        With the help of
+        <a class="link" href="https://aws.amazon.com/kms/">AWS KMS</a>, the data
+        was encrypted, the network was isolated using
+        <a
+          class="link"
+          href="https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html"
+          >AWS VPC</a
+        >, and with the help of
+        <a class="link" href="https://aws.amazon.com/iam/">AWS IAM</a> necessary
+        access was provided based on the role and the team they belonged to
+        considering least privilege factor.
+      </p>
+    </div>
+  </body>
+</html>

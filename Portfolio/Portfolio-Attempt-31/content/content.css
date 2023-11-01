@@ -22,8 +22,9 @@ body {
   display: none;
   width: 3rem;
   height: 3rem;
+  border: 3px solid #FFFFFF;
   background-color: #E00122;
-  color: #fff;
+  color: #FFFFFF;
   border-radius: 50%;
   text-align: center;
   line-height: 50px;
@@ -83,7 +84,7 @@ body {
     background-color: #001011;
     font-size: 6vw;
     cursor: default;
-    color: #FFD23F;
+    color: #FFFFFF;
     font-family: 'Poppins', sans-serif;
     text-align: center;
     line-height: 100vh;
@@ -97,7 +98,7 @@ body {
     cursor: default;
     text-align: center;
     line-height: 100vh;
-    background-color: #FFD23F;
+    background-color: #FFFFFF;
     background-image: url('../Images/wave.svg');
     background-repeat: no-repeat;
     background-size: contain; /* or cover, depending on how you want to scale the image */
@@ -114,7 +115,7 @@ body {
     line-height: 100vh;
     background-color: #001011;
     font-family: 'Poppins', sans-serif;
-    color: #FFD23F;
+    color: #FFFFFF;
 }
 
 /* Marquee Animation */
@@ -170,7 +171,7 @@ body {
   font-weight: 400;
   font-size: 3vw;
   padding: 1.5%;
-  color: #FFD23F;
+  color: #FFFFFF;
 }
 
 .text-block:nth-child(1) {
@@ -218,7 +219,7 @@ body {
   background-color: #001011;
   font-family: "Poppins", sans-serif;
   height: 120vh;
-  color: #FFD23F;
+  color: #FFFFFF;
 }
 
 .projects li {
@@ -241,7 +242,7 @@ body {
   background-color: #001011;
   font-family: "Poppins", sans-serif;
   height: 180vh;
-  color: #FFD23F;
+  color: #FFFFFF;
 }
 
 .skills h2 {
@@ -267,7 +268,7 @@ body {
   text-align: left;
   padding-top: 5%;
   padding-left: 3%; 
-  background-color: #FFD23F;
+  background-color: #FFFFFF;
   color: #001011;
 }
 
@@ -352,7 +353,7 @@ body {
   background-color: #001011;
   font-family: "Poppins", sans-serif;
   height: 100vh;
-  color: #FFD23F;
+  color: #FFFFFF;
   overflow: hidden;
 }
 
@@ -372,7 +373,7 @@ body {
 /* work experience */
 
 .work-experience {
-  background-color: #FFD23F;
+  background-color: #FFFFFF;
   font-family: "Poppins", sans-serif;
   height: 100vh;
   color: #001011;
@@ -394,7 +395,7 @@ body {
 /* Inspiration */
 
 .inspiration {
-  background-color: #FFD23F;
+  background-color: #FFFFFF;
   font-family: "Poppins", sans-serif;
   height: 650vh;
   color: #001011;
@@ -446,7 +447,7 @@ body {
   align-items: center;
   margin-top: 5%;
   background-color: #001011;
-  color: #FFD23F;
+  color: #FFFFFF;
 }
 
 .quote img {
@@ -472,7 +473,7 @@ body {
   background-color: #001011;
   font-family: "Poppins", sans-serif;
   height: 180vh;
-  color: #FFD23F;
+  color: #FFFFFF;
 }
 
 .contact h2 {
@@ -497,7 +498,7 @@ body {
   width: 100%;
   height: 64px;
   background: #001011;
-  color: #FFD23F;
+  color: #FFFFFF;
   font-family: 'Poppins', sans-serif;
   box-shadow: 0 0 10px rgb(0 0 0 / 10%);
   word-spacing: 2vw;
@@ -523,7 +524,7 @@ body {
 
 .navbar a.hover {
   background-color: #E00122;
-  color: #fff;
+  color: #FFFFFF;
 }
 
 /* Contact Me section */
@@ -553,23 +554,23 @@ body {
 #copy-btn {
   display: inline-block;
   padding: 0.5% 1.7%;
-  border: 0.1% solid #FFD23F;
+  border: 0.1% solid #FFFFFF;
   margin: 0 0.3% 0.3% 0;
   border-radius: 5px;
   box-sizing: border-box;
   text-decoration: none;
   font-family: "poppins", sans-serif;
   font-weight: 300;
-  color: #fff;
+  color: #FFFFFF;
   background-color: #E00122;
   text-align: center;
   transition: all 0.2s;
 }
 
 #copy-btn:hover {
-  background-color: #fff;
+  background-color: #FFFFFF;
   color: #E00122;
-  border: 1px solid #FFD23F;
+  border: 1px solid #FFFFFF;
 }
 
 /* Education section */
@@ -580,7 +581,7 @@ body {
   background-color: #001011;
   font-family: "Poppins", sans-serif;
   height: 120vh;
-  color: #FFD23F;
+  color: #FFFFFF;
   opacity: 0;
   transform: translateX(-50px);
   animation: slideIn 0.5s ease-in-out forwards;  
@@ -592,7 +593,7 @@ body {
   font-size: 6vw;
   cursor: default;
   text-align: center;
-  color: #FFD23F;
+  color: #FFFFFF;
 }
 
 .masters {
@@ -603,7 +604,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 5%;
-  background-color: #FFD23F;
+  background-color: #FFFFFF;
   color: #001011;
 }
 
@@ -624,7 +625,7 @@ body {
   margin-top: 5%;
   padding: 0% 0.25%;
   border-radius: 10px;
-  color: #FFD23F;
+  color: #FFFFFF;
   background-color: #001011;
 }
 
@@ -635,7 +636,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #FFD23F;
+  background-color: #FFFFFF;
 }
 
 .under img {
@@ -655,7 +656,7 @@ body {
   border-radius: 10px;
   margin-top: 5%;
   margin-bottom: 5%;
-  color: #FFD23F;
+  color: #FFFFFF;
   background-color: #001011;
 }
 

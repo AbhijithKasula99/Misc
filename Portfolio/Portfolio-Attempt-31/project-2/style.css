@@ -18,7 +18,7 @@
 
 .past h1 {
   height: 40vh;
-  color: #18ff6d;
+  color: #FFFFFF;
   font-family: "Poppins", sans-serif;
   font-size: 6vw;
   text-align: center;
@@ -27,7 +27,7 @@
 
 .past p {
   height: 50vh;
-  color: #18ff6d;
+  color: #FFFFFF;
   font-size: 3vw;
   font-family: "Poppins", sans-serif;
   overflow-y: hidden;
@@ -39,7 +39,7 @@
 .scrape {
   height: 320vh;
   overflow-y: hidden;
-  background-color: #18ff6d;
+  background-color: #FFFFFF;
   padding: 5% 5%;
 }
 
@@ -101,14 +101,14 @@ pre {
   font-family: "poppins", sans-serif;
   font-weight: 300;
   color: #001011;
-  background-color: #18ff6d;
+  background-color: #FFFFFF;
   text-align: center;
   transition: all 0.2s;
 }
 
 .btn:hover {
   background-color: #001011;
-  color: #18ff6d;
+  color: #FFFFFF;
   border: 1px solid #001011;
 }
 
@@ -117,7 +117,7 @@ pre {
 .download {
   background-color: #001011;
   height: 80vh;
-  color: #18ff6d;
+  color: #FFFFFF;
   overflow-y: hidden;
   padding: 5% 5%;
   font-family: "poppins", sans-serif;
@@ -126,7 +126,7 @@ pre {
 
 .download h1 {
   height: 20vh;
-  color: #18ff6d;
+  color: #FFFFFF;
   font-family: "Poppins", sans-serif;
   font-size: 6vw;
   text-align: center;
@@ -146,7 +146,7 @@ pre {
   display: none;
   width: 3rem;
   height: 3rem;
-  background-color: #18ff6d;
+  background-color: #FFFFFF;
   color: #001011;
   border-radius: 50%;
   text-align: center;
@@ -154,11 +154,11 @@ pre {
   font-size: 20px;
   z-index: 9999;
   overflow-y: hidden;
-  border: 5px solid #18ff6d;
+  border: 5px solid #FFFFFF;
 }
 
 .scroll-to-top:hover {
-  background-color: #18ff6d;
+  background-color: #FFFFFF;
   color: #001011;
   border: #001011 5px solid;
 }
@@ -251,7 +251,7 @@ pre {
   padding: 0 2vw;
   width: 100%;
   height: 24px;
-  background: #18ff6d;
+  background: #FFFFFF;
   color: #001011;
   font-family: "Poppins", sans-serif;
   box-shadow: 0 0 10px rgb(0 0 0 / 10%);
@@ -273,10 +273,10 @@ pre {
 }
 
 .navbar a.active {
-  color: #18ff6d;
+  color: #FFFFFF;
 }
 
 .navbar a.hover {
-  background-color: #18ff6d;
+  background-color: #FFFFFF;
   color: #001011;
 }

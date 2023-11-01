@@ -240,7 +240,7 @@ body {
 .skills {
   background-color: #001011;
   font-family: "Poppins", sans-serif;
-  height: 150vh;
+  height: 180vh;
   color: #FFD23F;
 }
 
@@ -718,7 +718,7 @@ body {
 
   .skills {
     height: auto;
-    min-height: 100vh;
+    min-height: 150vh;
   }
 
   .skills #ill {
